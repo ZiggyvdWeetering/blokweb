@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp:
   https://www.dreamworks.com/
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  home-page 
+  <img src="readme-images/dreamworks-home-img.png" width="375px" alt="een foto van dreamworks home page">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  diversity, equity, & inclusion page
+  <img src="readme-images//dreamworks-about.png" width="375px" alt="een foto van dreamworks diversity, equity, & inclusion page">
  
 </details>
 
@@ -58,6 +58,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  - Er worden meerdere h1's per pagina gebruikt
+  - De tekst van foto's met tekst kan je niet terugvinden in de alt
+  - Links zijn soms lastig om te zien, voornamelijk de h2's
+  - Op mobiel formaat is er geen focus status voor de navigatie
+  - Er is geen dark modus
+  - Als je tekst naar 200% zet op mobiel formaat is het amper leesbaar
+  - Achtergrond video's kunnen niet gepauzeerd worden
+  - Op groot formaat houden niet alle animaties zich aan de reduced motion media query
+  - Het contrast van tekst op afbeeldingen is soms niet goed
+
 </details>
 
 
@@ -68,7 +78,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_fed.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
