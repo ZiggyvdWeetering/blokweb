@@ -99,7 +99,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - ik vond het lastig om semantische code te typen, omdat er veel verschillende tags zijn en de elementen van dreamwork
+    hebben niet altijd een duidelijk doel, waardoor het lastig is om een tag omheen te zetten.
 
+  -Ik heb veel foutmeldingen in mijn stuk code voor de svg's.
+  <img src="readme-images/foutmeldingen.png" width="375px" alt="foutmeldingen van de code">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
