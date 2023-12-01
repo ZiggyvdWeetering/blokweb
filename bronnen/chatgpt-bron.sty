@@ -1,0 +1,31 @@
+wat betekent:: before
+
+ChatGPT
+Het ::before pseudo-element in CSS wordt gebruikt om inhoud aan een element toe te voegen voordat de werkelijke inhoud van het element begint. Het wordt vaak gebruikt in combinatie met de content eigenschap om extra inhoud of decoratie toe te voegen.
+
+Hier is een eenvoudig voorbeeld:
+
+css
+Copy code
+
+.element::before {
+  content: "Voor";
+}
+In dit geval wordt het woord "Voor" toegevoegd vóór de werkelijke inhoud van elk element met de klasse "element". Het is belangrijk op te merken dat ::before en ::after pseudo-elementen geen werkelijke HTML-elementen creëren, maar puur visuele effecten toevoegen via CSS.
+
+
+css
+Copy code
+
+section #backgroundplceholder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+Het ::before pseudo-element wordt gebruikt om een semi-transparante overlay bovenop het #backgroundplceholder element toe te voegen, zodat de achtergrondafbeelding enigszins wordt gedimd.
+
+In dit specifieke geval is content: ""; gebruikt omdat er geen extra tekst of inhoud wordt toegevoegd; we gebruiken het pseudo-element gewoon om een visueel effect te creëren.

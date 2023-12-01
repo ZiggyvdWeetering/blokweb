@@ -7,18 +7,67 @@
     margin: 0;
     padding: 0; 
 	text-decoration: none;
-}
-
-body{
-	height: 100vh;
-    width: 100%;
-}
-
-ul {
 	list-style: none
 }
 
+body{
+	font-family:TT Norms Regular ;
+}
 
+@font-face {
+    font-family: "TT Norms Regular";
+	src: url(../fonts/TT\ Norms\ Regular.ttf);
+}
+
+@font-face{
+	font-family: "TT Norms Bold";
+	src: url(../fonts/TT\ Norms\ Bold.ttf);
+}
+
+@font-face{
+	font-family: "TT Norms ExtraBold";
+	src: url(../fonts/TT\ Norms\ ExtraBold.ttf);	
+}
+
+h1,h2,h3,h4,h5{
+	text-transform: uppercase;
+}
+
+footer a, h5{
+	text-transform: uppercase;
+	font-size: 0.6875em;
+    letter-spacing: .05em;
+	font-weight: normal;
+	text-align: center;
+}
+
+h2 {
+	font-family: "TT Norms ExtraBold";
+	color: var(--color-text-on-white);
+	font-size: 1.625em;
+	text-align: center;
+	padding: 1.2em 0em 0.8em 0em;
+}
+
+h2 a{
+	color: var(--color-text-on-white);
+}
+
+h3{
+	font-size: 0.9375em;
+	color: var(--color-text-on-blueandimages);
+	padding-top: 2em;
+	font-weight: bold;
+	font-family: "TT Norms Bold";
+}
+
+h4{
+	font-size: 0.6875em;
+	color: var(--color-text-on-blueandimages);
+	letter-spacing: .05em;
+	font-weight: normal;
+	margin-top: 0.3125em;
+}
 
 
 
@@ -27,7 +76,6 @@ ul {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-background-blue:#052c6f;
 	--color-background-white:#ffffff;
 	--color-text-on-white:#052c6f;
@@ -43,45 +91,252 @@ ul {
 /* JOUW STYLING */
 /****************/
 
+/* movies + television */
+
+main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
+	background-color: var(--color-background-blue);
+	display: flex;
+	overflow-x:auto;	
+}
+
+main section:nth-of-type(2) img, main section:nth-of-type(3) img{
+	height: 24.875em;
+	width: 16.375em;
+	flex-shrink:0;	
+}
+
+main section:nth-of-type(2) li, main section:nth-of-type(3) li {
+	position: relative;	
+  }
+  
+main section:nth-of-type(2) div, main section:nth-of-type(3) div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  }
+  
+  main section:nth-of-type(2) div, section:nth-of-type(3) div{
+	background-image:linear-gradient( rgb(0 0 0 / 0), rgba(0 0 0 / .75) );
+  	margin:0em;
+  	padding:.5em;
+	right: 0;
+	padding-bottom: 1.25em;
+}
+
+
+
+
+
+/* about dreamworks */
+
+ main section:nth-of-type(4) {
+	background-color: var(--color-background-blue);
+	margin-top: 4.54545em;
+}
+
+main section:nth-of-type(4) h2 a{
+	color: var(--color-text-on-blueandimages);
+}
+
+main section:nth-of-type(4) h2{
+	padding-top: 1.5em;
+	padding-bottom: 1.2em;
+}
+
+main section:nth-of-type(4) ul{
+	display: flex;
+	overflow-x: auto;
+	margin-left: -2.5em;
+	padding-left:5.1875em;
+	padding-right:2.6875em ;
+}
+
+main section:nth-of-type(4) #campus, #iconic_feature_films, #award-winning_television, #innovative_technology{
+	width: 18.75em;
+	height: 16.875em;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;	
+}
+
+/* bron: chatgpt, te vinden in chatgpt.sty ik snap het nog steeds niet zo goed */
+main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #award-winning_television::before, #innovative_technology::before { 
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  main section:nth-of-type(4) #campus h3, #iconic_feature_films h3, #award-winning_television h3, #innovative_technology h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+#campus{
+	background-image:url(../images/about-creative-haven.jpg);
+}
+
+#iconic_feature_films{
+	background-image: url(../images/about-movies.jpg);
+}
+
+#award-winning_television{
+	background-image: url(../images/about-tv.jpg);
+}
+
+#innovative_technology{
+	background-image: url(../images/about-tech.jpg);
+}
+
+section:nth-of-type(4) p{
+	color: var(--color-text-on-blueandimages);
+	text-align: center;
+	font-size: 11px;
+	color: hsla(0,0%,100%,.8);
+	margin-top: 1.8em;
+	margin-bottom: 1.875em;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+
+
+/* Stay in touch */
+
+body main section:nth-of-type(5){
+	padding-left: 1.625em;
+	padding-right: 1.625em;
+	padding-top:1.625em ;
+	padding-bottom: 40px;
+}
+
+body main section:nth-of-type(5) h2, body main section:nth-of-type(5) p, body main section:nth-of-type(5) h5 {
+	text-align: initial;
+	color: var(--color-text-on-white);
+	margin: 0;
+	padding: 0;
+	font-size:1.25em; 
+}
+
+body main section:nth-of-type(5) p{
+	font-size:0.9375em ;
+	line-height: 1.4;
+    letter-spacing: .03em;
+	margin-top: 0.625em;
+}
+
+body main section:nth-of-type(5) h5{
+	font-family: "TT Norms Bold";
+	margin-bottom: 1.25em;
+	font-size: 0.6875em;
+}
+
+form{
+	margin-top: 1.25em;
+	padding-bottom: 1em;
+}
+
+main section:nth-of-type(5) img{
+	width: 20.1875em;
+	height: 10.4375em;
+	padding-top: 1em;
+} 
+
+
+
+
+
 /* footer */
+
 footer{
 	background-color:var(--color-background-blue);
 	color: var(--color-text-on-blueandimages);
-	padding: 2.5em 0.625em ;
+	padding: 2.5em 0.625em;
+}
+
+footer ul{
+	margin-left: 1.72em;
+	margin-right: 1.72em;
 }
 
 footer li a{
 	color: var(--color-text-on-blueandimages);
 }
 
-footer a{
+footer nav ul{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	margin-top: 1.875em;
+}
+
+footer li{
+	text-align: center;
+	padding-top:0.313em;
+	padding-bottom:0.313em ;
+}
+
+.footerlogo {
 	display: flex;
 	justify-content: center;
 }
 
-.icon-dw-logo{
-	width: 6.5625em;
-    height: 3.875em;
-	fill: var(--color-icon-on-footer);
-}
-
-footer ul{
-	margin-top:1.875em ;
-	display: flex;
-	flex-wrap: wrap;
-	
-}
-footer ul li{
-	display:flex;
-  	flex-basis:33%;
-  	justify-content:center;
+footer a .icon-dw-logo{
+	width: 9.5454em;
+    height: 5.6363em;
+	fill: var(--color-icon-on-footer);	
 }
 
 footer h5{
 	margin-top:1.875em ;
+	padding-bottom:0.455em;
 }
 
-footer img{
-	height: 1em;
-	width: 1em;
+footer nav ul li:last-child{
+	grid-column: -2;
+}
+
+footer aside{
+	margin-top: 1.875em;
+	margin-bottom:1.875em ;	
+}
+
+aside ul{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+	margin-top: .7em;	
+}
+
+footer aside li a svg{
+	width: 2.7272em;
+	height: 2.7272em;	
+}
+
+footer p{
+	font-size: 0.5em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .05em;
+}
+
+footer div{
+	text-align: center;
+	margin-top: 0.625em;
+}
+
+footer div img{
+	width:3.01em ;
+	height:1em ;
 }

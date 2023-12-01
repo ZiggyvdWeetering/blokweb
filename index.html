@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 	
 <head>
 	<meta charset="UTF-8">
@@ -181,27 +181,26 @@
 	</header>
 
 	<main>
-		<p>in theaters now</p>
-		<h1>Trolls band together</h1>
-		<ul>
-			<li><a href="#">Official site</a></li>
-			<li><a href="#">Watch Video</a></li>
-			<li><a href="#">Get tickets</a></li>
-		</ul>
 
-		
+		<section>
+			<p>in theaters now</p>
+			<h1>Trolls band together</h1>
+			<ul>
+				<li><a href="#">Official site</a></li>
+				<li><a href="#">Watch Video</a></li>
+				<li><a href="#">Get tickets</a></li>
+			</ul>
+			<ul><!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter -->
+				<li><meter min="0" max="100" value="0">at 50/100</meter></li>
+				<li><meter min="0" max="100" value="0">at 50/100</meter></li>
+				<li><meter min="0" max="100" value="0">at 50/100</meter></li>
+				<li><meter min="0" max="100" value="0">at 50/100</meter></li>
+			</ul>
+		</section>
 
-		<ul>
-			<li><meter min="0" max="100" value="0">at 50/100</meter></li>
-			<li><meter min="0" max="100" value="0">at 50/100</meter></li>
-			<li><meter min="0" max="100" value="0">at 50/100</meter></li>
-			<li><meter min="0" max="100" value="0">at 50/100</meter></li>
-		</ul>
-		<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter -->
-		
-		<h2><a href="#">movies</a></h2>
-
-		<ul>
+		<section>
+			<h2><a href="#">movies</a></h2>
+			<ul>
 			<li>
 				<a href="#">
 					<div>
@@ -291,11 +290,12 @@
 					<img src="images/boss-baby-2-pc-keyart.jpg" alt="A photo of the movie the boss baby: family business">
 				</a>
 			</li>
-		</ul>
+			</ul>
+		</section>
 
-		<h2><a href="#">television</a></h2>
-
-		<ul>
+		<section>
+			<h2><a href="#">television</a></h2>
+			<ul>
 			<li>
 				<a href="#">
 					<div>
@@ -405,77 +405,77 @@
 					<img src="images/JWCC_interactive_keyart_1350.jpg" alt="A photo of the series jurassic world: camp cretaceous">
 				</a>
 			</li>
-		</ul>
+			</ul>
+		</section>
 
-		<h2><a href="#">about dreamwork</a></h2>
+		<section>
+			<h2><a href="#">about dreamwork</a></h2>
 
-		<ul>
-			<li>
-				<a href="#">
-					<div>
-						<h3>campus</h3>
-					</div>
-					<img src="images/about-creative-haven.jpg" alt="A photo of the croods">
-				</a>
-				<p>The 9-acre campus in Glendale houses over 1200 employees in the feature film division – 800 of whom are artists and 3D animators, and 200 of whom are technologists and engineers.</p>
-			</li>
+			<ul>
+				<li>
+					<a href="#">
+						<div id="campus">
+							<h3>campus</h3>
+						</div>
+					</a>
+					<p>The 9-acre campus in Glendale houses over 1200 employees in the feature film division – 800 of whom are artists and 3D animators, and 200 of whom are technologists and engineers.</p>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>iconic feature films</h3>
-					</div>
-					<img src="images/about-movies.jpg" alt="A photo of kung fu panda">
-				</a>
-				<p>Home to some of the world's most beloved franchises including Shrek, Madagascar, Kung Fu Panda, Trolls, The Boss Baby, The Croods and How to Train Your Dragon, DreamWorks Animation creates award-winning films for a global audience.</p>
-			</li>
+				<li>
+					<a href="#">
+						<div id="iconic_feature_films">
+							<h3>iconic feature films</h3>
+						</div>
+					</a>
+					<p>Home to some of the world's most beloved franchises including Shrek, Madagascar, Kung Fu Panda, Trolls, The Boss Baby, The Croods and How to Train Your Dragon, DreamWorks Animation creates award-winning films for a global audience.</p>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>award-winning television</h3>
-					</div>
-					<img src="images/about-tv.jpg" alt="A photo of she-ra">
-				</a>
-				<p>In 2013, the DWA Television division was launched into being with a groundbreaking deal for hundreds of hours of kids and family programming.</p>
-			</li>
+				<li>
+					<a href="#">
+						<div id="award-winning_television">
+							<h3>award-winning television</h3>
+						</div>
+					</a>
+					<p>In 2013, the DWA Television division was launched into being with a groundbreaking deal for hundreds of hours of kids and family programming.</p>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>innovative technology</h3>
-					</div>
-					<img src="images/about-tech.jpg" alt="A photo of bilby">
-				</a>
-				<p>Developing for the future and innovating in the present.  DreamWorks Technology unleashes art.</p>
-			</li>
-		</ul>
+				<li>
+					<a href="#">
+						<div id="innovative_technology">
+							<h3>innovative technology</h3>
+						</div>
+					</a>
+					<p>Developing for the future and innovating in the present.  DreamWorks Technology unleashes art.</p>
+				</li>
+			</ul>
+		</section>
 
-		<h2>stay in touch</h2>
-		<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
+		<section>
+			<h2>stay in touch</h2>
+			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
 
-		<h5>enter birth date</h5>
+			<form role="form" action="#">
+				<h5>enter birth date</h5>
+				<label for="month">month</label>
+				<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
 
-		<form role="form" action="#">
-			<label for="month">month</label>
-			<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
+				<label for="day">day</label>
+				<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
 
-			<label for="day">day</label>
-			<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
+				<label for="year">year</label>
+				<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
 
-			<label for="year">year</label>
-			<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
+				<button type="submit">next</button>
+			</form>
 
-			<button type="submit">next</button>
-		</form>
-
-		<img src="images/signup-trolls.jpg" alt="a photo of multiple trolls from the movie trolls">
-
+			<img src="images/signup-trolls.jpg" alt="a photo of multiple trolls from the movie trolls">
+		</section>
+		
 	</main>
 
 	<footer>
 
-		<a href="#"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
+		<a href="#" class="footerlogo"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
 
 		<nav>
 			<ul>
@@ -490,17 +490,18 @@
 			</ul>
 		</nav>		
 
-		<h5>follow dreamworks</h5>
+		<aside>
+			<h5>follow dreamworks</h5>
 
-		<ul>
-			<li><a href="#"><svg class="icon-x-white-footer"><use xlink:href="#icon-x-white-footer"></use></svg></a></li>
-			<li><a href="#"><svg class="icon-facebook-footer"><use xlink:href="#icon-facebook-footer"></use></svg></a></li>
-			<li><a href="#"><svg class="icon-youtube-footer"><use xlink:href="#icon-youtube-footer"></use></svg></a></li>
-			<li><a href="#"><svg class="icon-instagram-footer"><use xlink:href="#icon-instagram-footer"></use></svg></a></li>
-			<li><a href="#"><svg class="icon-tiktok-footer"><use xlink:href="#icon-tiktok-footer"></use></svg></a></li>
-		</ul>
-
-		<p>© 2023 DreamWorks Animation All Rights Reserved. </p>
+			<ul>
+				<li><a href="#"><svg class="icon-x-white-footer"><use xlink:href="#icon-x-white-footer"></use></svg></a></li>
+				<li><a href="#"><svg class="icon-facebook-footer"><use xlink:href="#icon-facebook-footer"></use></svg></a></li>
+				<li><a href="#"><svg class="icon-youtube-footer"><use xlink:href="#icon-youtube-footer"></use></svg></a></li>
+				<li><a href="#"><svg class="icon-instagram-footer"><use xlink:href="#icon-instagram-footer"></use></svg></a></li>
+				<li><a href="#"><svg class="icon-tiktok-footer"><use xlink:href="#icon-tiktok-footer"></use></svg></a></li>
+			</ul>
+		</aside>
+		<p>© 2023 DreamWorks Animation All Rights Reserved. Privacy Policy | CA Notice | Terms of Service | YouTube Terms of Service | Google Privacy Policy </p>
 
 		<div>
             <img src="images/netapp-white.jpg" alt="netapp logo">

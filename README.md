@@ -112,16 +112,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ruben: Meer info over responsive design
   Elisa: Persoonlijke check over html
   Leon:  Info over hoe gedetaileerd surface plane
+  Jake: -
   
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb helaas geen antwoord kunnen krijgen op mijn vraag, wel was alles voor de rest goed.
 
 </details>
 
@@ -136,17 +134,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Ik vond het lastig om een goed passende background te geven aan mijn containers in "about dreamworks". Ook lukte het niet helemaal met de flexbox omdat de heading
+  wel in de container moest maar de p niet. En tot slot was het lastig om de container een donkere kleur te geven omdat er al een background img in zat, dus hiervoor heb 
+  ik een online bron gebruikt.
 
+  <img src="./images/Schermafbeelding 2023-12-01 131507.png" width="375px" alt="eindrusultaat background img">
+  <img src="./images/Schermopname (394).png" width="375px" alt="code background img">
+  <img src="./images/Schermopname (395).png" width="375px" alt="code background img">
+  
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ziggy: Info over svg foutmeldingen + oneindig scrollen in een overflow
+  Ruben: foto als ul achtergrond + foto carrousel
+  Leon:  Schalen van elementen + image overflowen
+  Elisa: -
+  Jake: -
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
