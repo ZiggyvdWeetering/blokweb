@@ -174,8 +174,10 @@
 		<nav>
 			<ul>
 				<li><a href="#"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
-				<li><a href="#"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></a></li>
-				<li><a href="#">Css hier</a></li>
+				<li><button type="button" aria-label="click here to open the search bar"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></button></li>
+				<li><button type="button" aria-label="click here to open the menu">
+					
+				</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -454,18 +456,27 @@
 			<h2>stay in touch</h2>
 			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
 
+			
 			<form role="form" action="#">
 				<h5>enter birth date</h5>
-				<label for="month">month</label>
-				<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
+				<fieldset>
+					<div>
+					<label for="month">Month</label>
+					<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
+					</div>
+				
+					<div>
+					<label for="day">Day</label>
+					<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
+					</div>
+				
+					<div>
+					<label for="year">Year</label>
+					<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
+					</div>
+				</fieldset>
 
-				<label for="day">day</label>
-				<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
-
-				<label for="year">year</label>
-				<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
-
-				<button type="submit">next</button>
+				<button type="button" aria-label="click here to continue to the next form requirements">next</button>
 			</form>
 
 			<img src="images/signup-trolls.jpg" alt="a photo of multiple trolls from the movie trolls">
