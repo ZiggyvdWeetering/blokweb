@@ -34,6 +34,17 @@ h1,h2,h3,h4,h5,button{
 	text-transform: uppercase;
 }
 
+p{
+	font-size:0.9375em ;
+	line-height: 1.4;
+    letter-spacing: .03em;
+}
+
+h1{
+	font-family: "TT Norms ExtraBold";
+	font-size: 1.875em;
+}
+
 footer a, h5{
 	text-transform: uppercase;
 	font-size: 0.6875em;
@@ -41,6 +52,7 @@ footer a, h5{
 	font-weight: normal;
 	text-align: center;
 }
+
 
 h2 {
 	font-family: "TT Norms ExtraBold";
@@ -87,6 +99,8 @@ svg{
 	--color-text-on-blueandimages:#ffffff;
 	--color-icon-on-footer:#ffffff;
 	--color-icon-on-header:#052c6f;
+	--color-nav-bar-active:#4c8dff;
+	--color-about-text:#FFFFFFCC;
 }
 
 
@@ -103,8 +117,8 @@ header{
 	background-color: var(--color-background-white);
 	width: 100%;
 	 
-		position: sticky; top: 0;
-	
+	position: sticky; 
+	top: 0;
 	z-index: 999;
 	
 }
@@ -177,14 +191,116 @@ header nav li a{
 }
 
 
+
+
 /* test */
 
-section:nth-of-type(1){
-	background-image: url(../images/ABN_S2_Key-Art_960x1458.jpg);
-	height: 36em;
-	width: 100%;
+section:nth-of-type(1) > ul:nth-of-type(1){
+	display: flex;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	flex-wrap: nowrap;
+}
+
+section:nth-of-type(1) img{
+	height: 33.3125em;
+	width: 23.4375em;	
 	
 }
+
+section:nth-of-type(1) > ul::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	z-index: 0;
+}
+
+
+
+
+section:nth-of-type(1) nav ul{
+	display: flex;
+}
+
+section:nth-of-type(1){
+	position: relative;
+	
+}
+section:nth-of-type(1) nav ul li{
+	width: 100%;
+}
+section:nth-of-type(1) nav ul li a::before {
+    content: " ";
+	background-color: var(--color-background-blue);
+    display: inline-block;
+    width: 100%; 
+    height: 4px; 
+}
+
+section:nth-of-type(1) nav ul li a:hover:before {
+	background-color: var(--color-nav-bar-active);
+}
+
+section:nth-of-type(1) nav{
+	position: absolute;
+    bottom: 0;
+    width: 100%; /*code van dreamworks */
+	padding: 10px;
+	padding-bottom: 40px;
+	
+}
+
+section:nth-of-type(1) div{
+	position: absolute;
+	left: 0;
+	bottom: 5.9375em;
+	padding-left: 0.625em;
+	color: var(--color-text-on-blueandimages);
+	z-index: 2;
+	
+}
+
+section:nth-of-type(1) div p{
+	text-transform: uppercase;
+	font-size: 0.6875em;
+	margin-bottom: 0.625em;
+}
+
+section:nth-of-type(1) div button{
+	margin: 1em 1em 0.5em 0em;
+    background: transparent;
+	font-family: "TT Norms Bold";
+    padding: 1em 1.6em;
+    text-align: center;
+    width: 125px;
+    cursor: pointer;
+    font-size: 0.6875em;
+    letter-spacing: .05em;
+    border: 0.0625em solid var(--color-text-on-blueandimages);
+	color: var(--color-text-on-blueandimages);
+}
+
+
+
+
+
+
+
+
+/*
+section:nth-of-type(1)::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+} */
 
 
 
@@ -194,6 +310,7 @@ main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
 	background-color: var(--color-background-blue);
 	display: flex;
 	overflow-x:auto;	
+	position: relative;
 }
 
 main section:nth-of-type(2) img, main section:nth-of-type(3) img{
@@ -297,12 +414,12 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 section:nth-of-type(4) p{
 	color: var(--color-text-on-blueandimages);
 	text-align: center;
-	font-size: 11px;
-	color: hsla(0,0%,100%,.8);
+	font-size: 0.6875em;
+	color: var(--color-about-text);
 	margin-top: 1.8em;
 	margin-bottom: 1.875em;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 0.625em;
+	margin-right: 0.625em;
 }
 
 
