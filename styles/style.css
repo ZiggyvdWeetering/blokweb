@@ -67,7 +67,7 @@ h2 a, button{
 }
 
 h3{
-	font-size: 0.9375em;
+	font-size: 15px;
 	color: var(--color-text-on-blueandimages);
 	padding-top: 2em;
 	font-weight: bold;
@@ -116,11 +116,26 @@ svg{
 header{
 	background-color: var(--color-background-white);
 	width: 100%;
-	 
 	position: sticky; 
 	top: 0;
-	z-index: 999;
-	
+	z-index:2 ;
+}
+
+header nav{
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+}
+
+header nav ul{
+	display: flex;
+}
+
+header nav ul li:nth-of-type(1){
+	margin-right: auto;
+}
+
+header nav li a{
+	padding-left: 0.625em;
 }
 
 header nav ul li:nth-of-type(1) svg{
@@ -135,15 +150,14 @@ header nav ul li:nth-of-type(2) svg{
 
 header nav ul li button{ 
 	padding: 1.5em;
-	display: flex; /*zet de svg in het midden, ik weet niet waarom*/
+	display: flex; 
 	background: transparent;
 	border: none;
 }
 
 header nav ul li:nth-of-type(3) button{
-	margin-right: 20px;
+	margin-right: 1.25em;
 }
-
 
 header nav ul li:nth-of-type(3) {
 	background: none;
@@ -173,43 +187,43 @@ header nav ul li:nth-of-type(3)::before {
 	margin-top: 0.1875em; 
 }
 
-header nav{
-	padding-top: 0.625em;
-	padding-bottom: 0.625em;
+
+
+
+
+
+/* carousel */
+
+section:nth-of-type(1){
+	position: relative;
 }
-
-header nav ul{
-	display: flex;
-}
-
-header nav ul li:nth-of-type(1){
-	margin-right: auto;
-}
-
-header nav li a{
-	padding-left: 0.625em;
-}
-
-
-
-
-/* test */
 
 section:nth-of-type(1) > ul:nth-of-type(1){
-	display: flex;
-	overflow: hidden;
-	scroll-behavior: smooth;
-	flex-wrap: nowrap;
+    display: flex;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-section:nth-of-type(1) img{
-	height: 33.3125em;
-	width: 23.4375em;	
-	
+section:nth-of-type(1) > ul:nth-of-type(1) li{
+	width: 100%;
+    flex-shrink: 0;
+
+	background-color: #0009;	
+
 }
+
+section:nth-of-type(1) > ul:nth-of-type(1) img{
+	display: block;
+    width: 100%;
+	mix-blend-mode: overlay;	
+} 
 
 section:nth-of-type(1) > ul::before{
-	content: "";
+	/* content: ""; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -219,49 +233,41 @@ section:nth-of-type(1) > ul::before{
 	z-index: 0;
 }
 
-
-
-
 section:nth-of-type(1) nav ul{
 	display: flex;
 }
 
-section:nth-of-type(1){
-	position: relative;
-	
-}
 section:nth-of-type(1) nav ul li{
 	width: 100%;
+	
 }
+
 section:nth-of-type(1) nav ul li a::before {
     content: " ";
 	background-color: var(--color-background-blue);
-    display: inline-block;
+    display: inline-block;  /* van de dreamworks website */
     width: 100%; 
-    height: 4px; 
+    height: 0.25em; 
 }
 
 section:nth-of-type(1) nav ul li a:hover:before {
 	background-color: var(--color-nav-bar-active);
 }
 
-section:nth-of-type(1) nav{
-	position: absolute;
-    bottom: 0;
-    width: 100%; /*code van dreamworks */
-	padding: 10px;
-	padding-bottom: 40px;
-	
-}
-
 section:nth-of-type(1) div{
 	position: absolute;
 	left: 0;
-	bottom: 5.9375em;
-	padding-left: 0.625em;
+	bottom: 1.8em;
+	padding: 0em 0.625em 0em 0.625em;
 	color: var(--color-text-on-blueandimages);
-	z-index: 2;
-	
+	z-index: 1;
+	width: 100%;
+}
+
+section:nth-of-type(1) div nav{
+	margin-top: 1.6em;
+	width: 100%; 
+	padding: 0.625em 0em 0.625em 0em;
 }
 
 section:nth-of-type(1) div p{
@@ -276,7 +282,8 @@ section:nth-of-type(1) div button{
 	font-family: "TT Norms Bold";
     padding: 1em 1.6em;
     text-align: center;
-    width: 125px;
+    width: 11.4em;
+	height: 3.56em;
     cursor: pointer;
     font-size: 0.6875em;
     letter-spacing: .05em;
@@ -288,22 +295,6 @@ section:nth-of-type(1) div button{
 
 
 
-
-
-
-/*
-section:nth-of-type(1)::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-} */
-
-
-
 /* movies + television */
 
 main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
@@ -311,30 +302,40 @@ main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
 	display: flex;
 	overflow-x:auto;	
 	position: relative;
+    width: 100%;
+    
 }
 
+
 main section:nth-of-type(2) img, main section:nth-of-type(3) img{
-	height: 24.875em;
-	width: 16.375em;
+	display: block;
+    width: 100%;
 	flex-shrink:0;	
+	
 }
 
 main section:nth-of-type(2) li, main section:nth-of-type(3) li {
 	position: relative;	
+	width: 70%;
+	flex-shrink: 0;
   }
   
 main section:nth-of-type(2) div, main section:nth-of-type(3) div {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	
   }
   
-  main section:nth-of-type(2) div, section:nth-of-type(3) div{
+main section:nth-of-type(2) div, section:nth-of-type(3) div{
 	background-image:linear-gradient( rgb(0 0 0 / 0), rgba(0 0 0 / .75) );
   	margin:0em;
   	padding:.5em;
 	right: 0;
 	padding-bottom: 1.25em;
+}
+main section:nth-of-type(2) h3, main section:nth-of-type(2) h4, main section:nth-of-type(3) h3, main section:nth-of-type(3) h4{
+	width: 90%;
 }
 
 
@@ -343,7 +344,7 @@ main section:nth-of-type(2) div, main section:nth-of-type(3) div {
 
 /* about dreamworks */
 
- main section:nth-of-type(4) {
+main section:nth-of-type(4) {
 	background-color: var(--color-background-blue);
 	margin-top: 3.54545em;
 }
@@ -459,8 +460,8 @@ body main section:nth-of-type(5) h5{
 
 
 main section:nth-of-type(5) img{
-	width: 20.1875em;
-	height: 10.4375em;
+	width: 100%;
+	height: 100%;
 	padding-top: 1em;
 } 
 
@@ -477,7 +478,8 @@ form{
 form fieldset {
 	display: flex;
 	border: 0;
-	max-width: 18.75em;
+	width: 100%;
+	gap:.6em;
 }
   
 form fieldset label {
@@ -500,7 +502,8 @@ form fieldset input {
   
 form fieldset div{
 	width: 100%;
-	
+	display: flex;
+	flex-direction: column;
 }
 
 form button{
