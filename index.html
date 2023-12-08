@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Ziggy van de Weetering">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dreamworks</title>
+	<title>Dreamworks home</title>
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/stylehome.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
+	<!-- svg's -->
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="icon-default" viewBox="0 0 512 512">
 		<path d="m475 256c0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29 40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110z"></path>
@@ -171,278 +173,279 @@
 		</svg>
 
 	<header>
+		<!-- sticky navigatie -->
 		<nav>
 			<ul>
-				<li><a href="#"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
-				<li><button type="button" aria-label="click here to open the search bar"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></button></li>
+				<li><a href="#" aria-label="dreamworks logo, go to homepage"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
+				<li><button type="button" aria-label="open the search bar"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></button></li>
 				<li><button type="button" aria-label="open the menu"></button></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-
+		
 		<section>
-			
+			<!-- Een carousel met 4 plaatjes, navigatie voor de plaatjes + tekst en buttons absoluut gepositioneerd -->
+			<h1>welcome to the dreamworks homepage!</h1>
 			<div>
 				<p>in theaters now</p>
-				<h1>Trolls band together</h1>
+				<h2>Trolls band together</h2>
 				<button>official site</button>
 				<button>watch video</button>
 
 				<nav>
-				
 					<ul>
-						<li><a href="#1"></a></li>
-						<li><a href="#2"></a></li>
-						<li><a href="#3"></a></li>
-						<li><a href="#4"></a></li>
-						
+						<li><a href="#1" aria-label="go to first picture in the carousel"></a></li>
+						<li><a href="#2" aria-label="go to second picture in the carousel"></a></li>
+						<li><a href="#3" aria-label="go to third picture in the carousel"></a></li>
+						<li><a href="#4" aria-label="go to fourth picture in the carousel"></a></li>	
 					</ul>	
 				</nav>
 			</div>
 			
 			<ul>
+				
 				<li id="1">
-					
 					<a href="#">
-						<img src="images/trolls-3-hero-mobile-1.jpg" alt="A photo of the movie trolls 3">
+						<img src="images/trolls-3-hero-mobile-1.jpg" alt="A photo of the movie, trolls 3">
 					</a>
 				</li>
 
 				<li id="2">
 					<a href="#">
-						<img src="images/BAD_Holiday_Hero_Mobile.jpg" alt="A photo of the movie trolls 3">
+						<img src="images/BAD_Holiday_Hero_Mobile.jpg" alt="A photo of the movie, the bad guys: a very bad holiday">
 					</a>
 				</li>
 
 				<li id="3">
 					<a href="#">
-						<img src="images/GDG_S4_Hero_Mobile.jpg" alt="A photo of the movie trolls 3">
+						<img src="images/GDG_S4_Hero_Mobile.jpg" alt="A photo of the series, god dog go">
 					</a>
 				</li>
 
 				<li id="4">
 					<a href="#">
-						<img src="images/GAB_S8B_Hero_Mobile.jpg" alt="A photo of the movie trolls 3">
+						<img src="images/GAB_S8B_Hero_Mobile.jpg" alt="A photo of the series, gabby's dollhouse">
 					</a>
 				</li>
 			</ul>
-
-			
 		</section>
 
 		<section>
+			<!-- Aanbod films die je zijwaarts kan scrollen, div om de h3 en 4 om ze te positioneren als absolute -->
 			<h2><a href="#">movies</a></h2>
 			<ul>
-			<li>
-				<a href="#">
-					<div>
-						<h3>Spirit Untamed</h3>
-						<h4>available now blu-ray,dvd,digital & on demand</h4>
-					</div>
-					<img src="images/spirit-untamed-poster-1.jpg" alt="A photo of the movie spirit untamed">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>Spirit Untamed</h3>
+							<h4>available now blu-ray,dvd,digital & on demand</h4>
+						</div>
+						<img src="images/spirit-untamed-poster-1.jpg" alt="A photo of the movie spirit untamed">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>the croods: a new age</h3>
-						<h4>available now 4k ultra hd,blu-ray™,dvd,digital & on demand</h4>
-					</div>
-					<img src="images/croods-2-key-art-v3.jpg" alt="A photo of the movie The croods: A new Age">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>the croods: a new age</h3>
+							<h4>available now 4k ultra hd,blu-ray™,dvd,digital & on demand</h4>
+						</div>
+						<img src="images/croods-2-key-art-v3.jpg" alt="A photo of the movie The croods: A new Age">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>trolls band together</h3>
-						<h4>in theaters now</h4>
-					</div>
-					<img src="images/trolls-band-together-poster.jpg" alt="A photo of the movie Trolls band together">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>trolls band together</h3>
+							<h4>in theaters now</h4>
+						</div>
+						<img src="images/trolls-band-together-poster.jpg" alt="A photo of the movie Trolls band together">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>ruby gillman, teenage kraken</h3>
-						<h4>available now on digital, blu-ray & dvd</h4>
-					</div>
-					<img src="images/ruby-gillman-teenage-kraken-poster.jpg" alt="A photo of the movie ruby gillman, teenage kraken">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>ruby gillman, teenage kraken</h3>
+							<h4>available now on digital, blu-ray & dvd</h4>
+						</div>
+						<img src="images/ruby-gillman-teenage-kraken-poster.jpg" alt="A photo of the movie ruby gillman, teenage kraken">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>puss in boots: the last wish</h3>
-						<h4>available now digital, 4k uhd, blu-ray & dvd</h4>
-					</div>
-					<img src="images/puss-in-boots-the-last-wish-key-art2.jpg" alt="A photo of the movie puss in boots: the last wish">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>puss in boots: the last wish</h3>
+							<h4>available now digital, 4k uhd, blu-ray & dvd</h4>
+						</div>
+						<img src="images/puss-in-boots-the-last-wish-key-art2.jpg" alt="A photo of the movie puss in boots: the last wish">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>the bad guys</h3>
-						<h4>available now on digital, 4k uhd, blu-ray & dvd</h4>
-					</div>
-					<img src="images/the-bad-guys-key-art.jpg" alt="A photo of the movie the bad guys">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>the bad guys</h3>
+							<h4>available now on digital, 4k uhd, blu-ray & dvd</h4>
+						</div>
+						<img src="images/the-bad-guys-key-art.jpg" alt="A photo of the movie the bad guys">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>trolls world tour</h3>
-						<h4>on 4k ultra hd, blu-ray, dvd & digital</h4>
-					</div>
-					<img src="images/twt-key-art-no-text.jpg" alt="A photo of the movie Spirit Untamed">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>trolls world tour</h3>
+							<h4>on 4k ultra hd, blu-ray, dvd & digital</h4>
+						</div>
+						<img src="images/twt-key-art-no-text.jpg" alt="A photo of the movie Spirit Untamed">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>abonimable</h3>
-						<h4>on 4k ultra hd, blu-ray, dvd & digital</h4>
-					</div>
-					<img src="images/abominable-keyart.jpg" alt="A photo of the movie abinable">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>abonimable</h3>
+							<h4>on 4k ultra hd, blu-ray, dvd & digital</h4>
+						</div>
+						<img src="images/abominable-keyart.jpg" alt="A photo of the movie abinable">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>the boss baby: family business</h3>
-						<h4>available now 4k, blu-ray, dvd & digital</h4>
-					</div>
-					<img src="images/boss-baby-2-pc-keyart.jpg" alt="A photo of the movie the boss baby: family business">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>the boss baby: family business</h3>
+							<h4>available now 4k, blu-ray, dvd & digital</h4>
+						</div>
+						<img src="images/boss-baby-2-pc-keyart.jpg" alt="A photo of the movie the boss baby: family business">
+					</a>
+				</li>
 			</ul>
 		</section>
 
 		<section>
+			<!-- Aanbod van television die je zijwaarts kan scrollen, div om de h3 en 4 om ze te positioneren als absolute -->
 			<h2><a href="#">television</a></h2>
 			<ul>
-			<li>
-				<a href="#">
-					<div>
-						<h3>kung fu panda: the dragon knight</h3>
-						<h4>new episodes now streaming on netflix</h4>
-					</div>
-					<img src="images/KDK_S3_Key_Art_960x1458.jpg" alt="A photo of the series kung fu panda: the dragon knight">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>kung fu panda: the dragon knight</h3>
+							<h4>new episodes now streaming on netflix</h4>
+						</div>
+						<img src="images/KDK_S3_Key_Art_960x1458.jpg" alt="A photo of the series kung fu panda: the dragon knight">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>curse!</h3>
-						<h4>new series now streaming on apple tv+</h4>
-					</div>
-					<img src="images/CRS1_Keyart_960.jpg" alt="A photo of the series curse!">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>curse!</h3>
+							<h4>new series now streaming on apple tv+</h4>
+						</div>
+						<img src="images/CRS1_Keyart_960.jpg" alt="A photo of the series curse!">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>the croods: family tree</h3>
-						<h4>new season now streaming on hulu & peacock</h4>
-					</div>
-					<img src="images/NCR_S8_KeyArt_960x1458.jpg" alt="A photo of the series the croods: family tree">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>the croods: family tree</h3>
+							<h4>new season now streaming on hulu & peacock</h4>
+						</div>
+						<img src="images/NCR_S8_KeyArt_960x1458.jpg" alt="A photo of the series the croods: family tree">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>gabby's dollhouse</h3>
-						<h4>new episode now streaming on netflix</h4>
-					</div>
-					<img src="images/GAB_S8B_KeyArt_960x1458.jpg" alt="A photo of the series gabby's dollhouse">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>gabby's dollhouse</h3>
+							<h4>new episode now streaming on netflix</h4>
+						</div>
+						<img src="images/GAB_S8B_KeyArt_960x1458.jpg" alt="A photo of the series gabby's dollhouse">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>fright krewe</h3>
-						<h4>now streaming on hulu and peacock</h4>
-					</div>
-					<img src="images/FRC_S1_KeyArt_960x1458.jpg" alt="A photo of the series fright krewe">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>fright krewe</h3>
+							<h4>now streaming on hulu and peacock</h4>
+						</div>
+						<img src="images/FRC_S1_KeyArt_960x1458.jpg" alt="A photo of the series fright krewe">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>dragons: the nine realms</h3>
-						<h4>now streaming on hulu and peacock</h4>
-					</div>
-					<img src="images/NDR_S7_KeyArt_960x1458.jpg" alt="A photo of the series dragons: the nine realms">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>dragons: the nine realms</h3>
+							<h4>now streaming on hulu and peacock</h4>
+						</div>
+						<img src="images/NDR_S7_KeyArt_960x1458.jpg" alt="A photo of the series dragons: the nine realms">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>dew drop diaries</h3>
-						<h4>new series now streaming on netflix</h4>
-					</div>
-					<img src="images/DEW_S1_KeyArt_960x1458.jpg" alt="A photo of the series dew drop diaries">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>dew drop diaries</h3>
+							<h4>new series now streaming on netflix</h4>
+						</div>
+						<img src="images/DEW_S1_KeyArt_960x1458.jpg" alt="A photo of the series dew drop diaries">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>not quite narwhal</h3>
-						<h4>now streaming on netflix</h4>
-					</div>
-					<img src="images/NQN_KeyArt_960x1458.jpg" alt="A photo of the series not quite narwhal">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>not quite narwhal</h3>
+							<h4>now streaming on netflix</h4>
+						</div>
+						<img src="images/NQN_KeyArt_960x1458.jpg" alt="A photo of the series not quite narwhal">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>the boss baby: back in the crib</h3>
-						<h4>new episodes now streaming on netflix</h4>
-					</div>
-					<img src="images/BOS(BITC)_S2_KeyArt_960x1458v2.jpg" alt="A photo of the series the boss baby: back in the crib">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>the boss baby: back in the crib</h3>
+							<h4>new episodes now streaming on netflix</h4>
+						</div>
+						<img src="images/BOS(BITC)_S2_KeyArt_960x1458v2.jpg" alt="A photo of the series the boss baby: back in the crib">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>abominable the invisible city</h3>
-						<h4>new episodes now streaming on hulu and peacock</h4>
-					</div>
-					<img src="images/ABN_S2_Key-Art_960x1458.jpg" alt="A photo of the series abominable the invisible city">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>abominable the invisible city</h3>
+							<h4>new episodes now streaming on hulu and peacock</h4>
+						</div>
+						<img src="images/ABN_S2_Key-Art_960x1458.jpg" alt="A photo of the series abominable the invisible city">
+					</a>
+				</li>
 
-			<li>
-				<a href="#">
-					<div>
-						<h3>jurassic world: camp cretaceous</h3>
-						<h4>interactive special now streaming on netflix</h4>
-					</div>
-					<img src="images/JWCC_interactive_keyart_1350.jpg" alt="A photo of the series jurassic world: camp cretaceous">
-				</a>
-			</li>
+				<li>
+					<a href="#">
+						<div>
+							<h3>jurassic world: camp cretaceous</h3>
+							<h4>interactive special now streaming on netflix</h4>
+						</div>
+						<img src="images/JWCC_interactive_keyart_1350.jpg" alt="A photo of the series jurassic world: camp cretaceous">
+					</a>
+				</li>
 			</ul>
 		</section>
 
 		<section>
+			<!-- Een sectie met klikbare containers en tekst over "about dreamworks, div om de h3 te plaatsen als absoluut.  -->
 			<h2><a href="#">about dreamwork</a></h2>
 
 			<ul>
@@ -485,6 +488,7 @@
 		</section>
 
 		<section>
+			<!-- sectie met info over hoe je dreamworks kan contacten en een form om dat te doen -->
 			<h2>stay in touch</h2>
 			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
 
@@ -493,18 +497,18 @@
 				<h5>enter birth date</h5>
 				<fieldset>
 					<div>
-					<label for="month">Month</label>
-					<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
+						<label for="month">Month</label>
+						<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
 					</div>
 				
 					<div>
-					<label for="day">Day</label>
-					<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
+						<label for="day">Day</label>
+						<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
 					</div>
 				
 					<div>
-					<label for="year">Year</label>
-					<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
+						<label for="year">Year</label>
+						<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
 					</div>
 				</fieldset>
 
@@ -517,8 +521,8 @@
 	</main>
 
 	<footer>
-
-		<a href="#" class="footerlogo"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
+		<!-- een footer met nav en links naar social media -->
+		<a href="#" aria-label="dreamworks logo, go to homepage" class="footerlogo"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
 
 		<nav>
 			<ul>
@@ -537,12 +541,28 @@
 			<h5>follow dreamworks</h5>
 
 			<ul>
-				<li><a href="#"><svg class="icon-x-white-footer"><use xlink:href="#icon-x-white-footer"></use></svg></a></li>
-				<li><a href="#"><svg class="icon-facebook-footer"><use xlink:href="#icon-facebook-footer"></use></svg></a></li>
-				<li><a href="#"><svg class="icon-youtube-footer"><use xlink:href="#icon-youtube-footer"></use></svg></a></li>
-				<li><a href="#"><svg class="icon-instagram-footer"><use xlink:href="#icon-instagram-footer"></use></svg></a></li>
-				<li><a href="#"><svg class="icon-tiktok-footer"><use xlink:href="#icon-tiktok-footer"></use></svg></a></li>
-			</ul>
+				<li>
+				  <a href="#" aria-label="facebook logo, go to facebook">
+					<svg class="icon-facebook-footer"><use xlink:href="#icon-facebook-footer"></use></svg>
+				  </a>
+				</li>
+				<li>
+				  <a href="#" aria-label="youtube logo, go to youtube">
+					<svg class="icon-youtube-footer"><use xlink:href="#icon-youtube-footer"></use></svg>
+				  </a>
+				</li>
+				<li>
+				  <a href="#" aria-label="instagram logo, go to instagram">
+					<svg class="icon-instagram-footer"><use xlink:href="#icon-instagram-footer"></use></svg>
+				  </a>
+				</li>
+				<li>
+				  <a href="#" aria-label="tiktok logo, go to tiktok">
+					<svg class="icon-tiktok-footer"><use xlink:href="#icon-tiktok-footer"></use></svg>
+				  </a>
+				</li>
+			  </ul>
+			  
 		</aside>
 		<p>© 2023 DreamWorks Animation All Rights Reserved. Privacy Policy | CA Notice | Terms of Service | YouTube Terms of Service | Google Privacy Policy </p>
 
@@ -552,7 +572,7 @@
         </div>
 
 	</footer>
-
+	<!-- script tag om javascript te linken -->
 	<script defer src="scripts/script.js"></script>
 </body>
 	

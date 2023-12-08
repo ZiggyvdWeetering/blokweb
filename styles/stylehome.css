@@ -1,0 +1,434 @@
+
+section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(5) h2 {
+	font-family: "TT Norms ExtraBold";
+	color: var(--color-text-on-white);
+	font-size: 1.625em;
+	text-align: center;
+	padding: 1.2em 0em 0.8em 0em;
+}
+
+
+
+
+
+
+/* carousel */
+
+section:nth-of-type(1) h1{
+	width: 0.01em;
+	height: 0.01em;
+	margin: -0.01em;
+	padding: 0;
+	overflow: hidden;
+}
+
+section:nth-of-type(1){
+	position: relative;
+}
+
+section:nth-of-type(1) > ul:nth-of-type(1){
+    display: flex;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section:nth-of-type(1) > ul:nth-of-type(1) li{
+	width: 100%;
+    flex-shrink: 0;
+	background-color: var(--color-img-blend-backgroud);	
+
+}
+
+section:nth-of-type(1) > ul:nth-of-type(1) img{
+	display: block;
+    width: 100%;
+	mix-blend-mode: overlay;	
+} 
+
+
+section:nth-of-type(1) nav ul{
+	display: flex;
+}
+
+section:nth-of-type(1) nav ul li{
+	width: 100%;
+	
+}
+
+section:nth-of-type(1) nav ul li a::before {
+    content: " ";
+	background-color: var(--color-background-blue);
+    display: inline-block;  /* van de dreamworks website */
+    width: 100%; 
+    height: 0.25em; 
+}
+
+section:nth-of-type(1) div{
+	position: absolute;
+	left: 0;
+	bottom: 1.8em;
+	padding: 0em 0.625em 0em 0.625em;
+	color: var(--color-text-on-blueandimages);
+	z-index: 1;
+	width: 100%;
+}
+
+section:nth-of-type(1) div nav{
+	margin-top: 1.6em;
+	width: 100%; 
+	padding: 0.625em 0em 0.625em 0em;
+}
+
+section:nth-of-type(1) div p{
+	text-transform: uppercase;
+	font-size: 0.6875em;
+	margin-bottom: 0.625em;
+}
+
+body main section:nth-of-type(1) h2{
+	font-family: "TT Norms ExtraBold";
+	font-size: 1.875em;
+	color: var(--color-text-on-blueandimages);
+	
+}
+
+section:nth-of-type(1) div button{
+	margin: 1em 1em 0.5em 0em;
+    background: transparent;
+	font-family: "TT Norms Bold";
+    padding: 1em 1.6em;
+    text-align: center;
+    width: 11.4em;
+	height: 3.56em;
+    cursor: pointer;
+    font-size: 0.6875em;
+    letter-spacing: .05em;
+    border: 0.0625em solid var(--color-text-on-blueandimages);
+	color: var(--color-text-on-blueandimages);
+}
+
+section:nth-of-type(1) div button:hover, section:nth-of-type(1) div button:focus{
+	background-color: var(--color-button-hover-white);
+	color: var(--color-hover-content-blue)
+}
+
+section:nth-of-type(1) div button:active, section:nth-of-type(1) div button:active{
+	background-color: var(--color-button-hover-blue);
+	color: var(--color-hover-content-white);
+}
+
+
+
+section:nth-of-type(1) nav ul li a:hover:before, section:nth-of-type(1) nav ul li a:focus:before {
+	background-color: var(--color-caro-hover);
+}
+
+section:nth-of-type(1) nav ul li a:active:before{
+	background-color: var(--color-button-hover-white);
+}
+
+
+
+
+
+
+/* movies + television */
+
+h3{
+	font-size: 0.9375em;
+	color: var(--color-text-on-blueandimages);
+	padding-top: 2em;
+	font-family: "TT Norms Bold";
+}
+
+h4{
+	font-size: 0.6875em;
+	color: var(--color-text-on-blueandimages);
+	letter-spacing: .05em;
+	font-weight: normal;
+	margin-top: 0.3125em;
+}
+
+h2 a, button{
+	color: var(--color-text-on-white);
+}
+
+main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
+	background-color:var(--color-img-blend-backgroud);
+	display: flex;
+	overflow-x:auto;	
+	position: relative;
+    width: 100%;
+    
+}
+
+
+
+main section:nth-of-type(2) img, main section:nth-of-type(3) img{
+	display: block;
+    width: 100%;
+	flex-shrink:0;	
+	
+}
+
+main section:nth-of-type(2) li, main section:nth-of-type(3) li {
+	position: relative;	
+	width: 70%;
+	flex-shrink: 0;
+  }
+  
+main section:nth-of-type(2) div, main section:nth-of-type(3) div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+  }
+  
+main section:nth-of-type(2) div, section:nth-of-type(3) div{
+	background-image: linear-gradient(var(--gradient-start), var(--gradient-end));
+  	margin:0em;
+  	padding:.5em;
+	right: 0;
+	padding-bottom: 1.25em;
+}
+main section:nth-of-type(2) h3, main section:nth-of-type(2) h4, main section:nth-of-type(3) h3, main section:nth-of-type(3) h4{
+	width: 90%;
+}
+
+h2 a:hover, h2 a:focus{
+	color: var(--color-h2-hover);
+}
+h2 a:active{
+	color: var(--color-h2-hover);
+}
+		
+img:hover{
+	mix-blend-mode: overlay;
+}
+img:active{
+	mix-blend-mode: lighten;
+}
+
+
+/* about dreamworks */
+
+main section:nth-of-type(4) {
+	background-color: var(--color-background-blue);
+	margin-top: 3.54545em;
+}
+
+main section:nth-of-type(4) h2 a{
+	color: var(--color-text-on-blueandimages);
+}
+
+main section:nth-of-type(4) h2{
+	padding-top: 1.5em;
+	padding-bottom: 1.2em;
+	text-align: center;
+	font-family: "TT Norms ExtraBold";
+}
+
+
+main section:nth-of-type(4) ul{
+	display: flex;
+	overflow-x: auto;
+	margin-left: -2.5em;
+	padding-left:5.1875em;
+	padding-right:2.6875em ;
+}
+
+
+
+#campus, #iconic_feature_films, #award-winning_television, #innovative_technology{
+	width: 18.75em;
+	height: 16.875em;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;	
+}
+
+
+main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #award-winning_television::before, #innovative_technology::before { 
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(var(--about-background), var(--about-background));
+  }
+
+  main section:nth-of-type(4) #campus h3, #iconic_feature_films h3, #award-winning_television h3, #innovative_technology h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	font-size: 1.25em;
+	width: 100%;
+	text-align: center;
+}
+
+#campus{
+	background-image:url(../images/about-creative-haven.jpg);
+}
+
+#iconic_feature_films{
+	background-image: url(../images/about-movies.jpg);
+}
+
+#award-winning_television{
+	background-image: url(../images/about-tv.jpg);
+}
+
+#innovative_technology{
+	background-image: url(../images/about-tech.jpg);
+}
+
+section:nth-of-type(4) p{
+	color: var(--color-text-on-blueandimages);
+	text-align: center;
+	font-size: 0.6875em;
+	color: var(--color-about-text);
+	margin-top: 1.8em;
+	margin-bottom: 1.875em;
+	margin-left: 0.625em;
+	margin-right: 0.625em;
+}
+
+main section:nth-of-type(4) h2 a:hover, main section:nth-of-type(4) h2 a:focus{
+	color: var(--color-about-h2-hover);
+} 
+
+main section:nth-of-type(4) h2 a:active{
+	color: var(--color-text-on-blueandimages);
+} 
+
+main section:nth-of-type(4) #campus:hover, #iconic_feature_films:hover, #award-winning_television:hover, #innovative_technology:hover{
+	border: solid 0.5em var(--color-button-hover-white)
+}
+
+main section:nth-of-type(4) #campus:active, #iconic_feature_films:active, #award-winning_television:active, #innovative_technology:active{
+	border: solid 0.5em var(--color-button-hover-blue)
+}
+
+
+
+
+/* Stay in touch */
+
+body main section:nth-of-type(5){
+	padding-left: 1.625em;
+	padding-right: 1.625em;
+	padding-top:1.625em ;
+	padding-bottom: 2.5em;
+}
+
+body main section:nth-of-type(5) h2, body main section:nth-of-type(5) p, body main section:nth-of-type(5) h5 {
+	text-align: initial;
+	color: var(--color-text-on-white);
+	margin: 0;
+	padding: 0;
+	font-size:1.25em; 
+}
+
+body main section:nth-of-type(5) p{
+	font-size:0.9375em ;
+	line-height: 1.4;
+    letter-spacing: .03em;
+	margin-top: 0.625em;
+}
+
+body main section:nth-of-type(5) h5{
+	font-family: "TT Norms Bold";
+	margin-bottom: 4.8em;
+	font-size: 0.6875em;
+}
+
+
+main section:nth-of-type(5) img{
+	width: 100%;
+	height: 100%;
+	padding-top: 1em;
+} 
+
+
+
+
+
+/* Form */
+form{
+	margin-top: 1.25em;
+	padding-bottom: 2.8125em;
+}
+
+form fieldset {
+	display: flex;
+	border: 0;
+	width: 100%;
+	gap:.6em;
+}
+  
+form fieldset label {
+	margin-bottom: 1em;
+	color: var(--color-text-on-white);
+	text-decoration: none;
+	font-size: 0.6875em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	font-family:"TT Norms Bold";
+}
+  
+form fieldset input {
+	width: 6.5em;
+	color: var(--color-text-on-white);
+	border: 0;
+	border-bottom: 0.0625em solid var(--color-background-blue);
+	margin-bottom: 1em; 
+}
+
+form fieldset input:hover, form fieldset input:focus {
+	outline: 0.0625em solid var(--color-button-hover-blue); 
+}
+  
+form fieldset div{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+form button{
+	margin-top: 1.7em;
+    background: transparent;
+	font-family: "TT Norms Bold";
+    padding: 1em 1.6em;
+    text-align: center;
+    width: 14em;
+    cursor: pointer;
+    font-size: 0.6875em;
+    letter-spacing: .05em;
+    border: 0.0625em solid var(--color-text-on-white);
+}
+  
+form button:hover, form button:focus{
+	background-color: var(--color-button-hover-blue);
+	color: var(--color-hover-content-white);
+}
+
+form button:active{
+	background-color: var(--color-button-hover-white);
+	color: var(--color-hover-content-blue);
+}
+
+/* footer */
+h5{
+	text-transform: uppercase;
+	font-size: 0.6875em;
+    letter-spacing: .05em;
+	font-weight: normal;
+	text-align: center;
+}

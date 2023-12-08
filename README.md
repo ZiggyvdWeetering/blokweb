@@ -156,10 +156,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+ Ik ben te weten gekomen dat de foutmeldingen oke zijn en dat een oneidige scroll eigenlijk
+ heel overbodig en niet toegankelijk is.
 
 </details>
 
@@ -189,15 +187,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  - ik had veel moete met alle states uitwerken, vooral met focus, omdat de tab niet direct mijn gestijlde elementen focussed.
+  - ook lukte de carousel niet helemaal, maar in de les werd ik geholpen door de student assisten en toen bleek het dat ik de img niet op 100% widt had gezet
+
+<img src="./readme-images/Schermopname(399).png" width="375px" alt="code background img">
+<img src="./readme-images/Schermopname(400).png" width="375px" alt="code background img">
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Ziggy: hoe kan ik een image een focus status geven + hoe maak ik een menu met javascript
+  Ruben: 
+  Leon:  
+  Elisa: -
+  Jake: -
 
 
   ### Verslag van meeting
