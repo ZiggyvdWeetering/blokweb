@@ -301,7 +301,7 @@ section:nth-of-type(4) p{
 }
 
 main section:nth-of-type(4) h2 a:hover, main section:nth-of-type(4) h2 a:focus{
-	color: var(--color-about-h2-hover);
+	color: var(--color-h2-hover);
 } 
 
 main section:nth-of-type(4) h2 a:active{
