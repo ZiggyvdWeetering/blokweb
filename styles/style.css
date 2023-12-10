@@ -12,6 +12,7 @@
 
 body{
 	font-family:"TT Norms Regular" ;
+	background-color: var(--color-background-body);
 }
 
 /* geimporteerde fonts */
@@ -60,54 +61,234 @@ button{
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-
 	/* achtergrond kleuren */
-	--color-background-blue:#052c6f;
-	--color-background-white:#ffffff;
+	--color-background-body:#ffffff;
+	--color-background-footer:#052c6f;
+	--color-background-about:#052c6f;
+	
+	/*main  tekst kleuren */
+	--color-text-on-background:#ffffff;
+	--color-text-on-no-background:#052c6f;
+	/* light toggle */
+	--color-toggle-primary:#052c6f;
+	--color-toggle-secondary:#ffffff;
+	--color-toggle-hover-focus:#4c8dff;
 
-	/* tekst kleuren */
-	--color-text-on-white:#052c6f;
-	--color-text-on-blueandimages:#ffffff;
-
-	/* incoon kleuren */
-	--color-icon-on-footer:#ffffff;
+	/* header*/
+	--color-navbar:#ffffff;
 	--color-icon-on-header:#052c6f;
+	--color-header-icon-hover:#ffffff;
+	--color-header-icon-hover-background:#052c6f;
 
-	/* kleur voor de navigatie hover in de carousel */
+	/* carousel */
+	--color-carousel-nav:#052c6f;
 	--color-caro-hover:#4c8dff;
+	--color-carousel-button-hover:#ffffff;
+	--color-carousel-button-hover-content:#052c6f;
+	--color-img-blend-backgroud:rgba(0, 0, 0, 0.678);
+	--color-carousel-button-border:#ffffff;
 
-	/* kleur voor de hover op de h2 in de about sectie*/
+	/* movies films */
+	--color-background-focus-hover-state: lightblue;
 	--color-h2-hover:#4c8dff;
+	--gradient-start-film-movie: rgb(0 0 0 / 0);
+	--gradient-end-film-movie: rgba(0 0 0 / .75);
+	--color-visited:#4c8dff;
+	--color-h2-hover-content:#4c8dff;
 
 
+	/* about */
 	--color-about-text:#FFFFFFCC;
-	--color-button-hover-blue:#052c6f;
-	--color-hover-content-white:#ffffff;
-	--color-button-hover-white:#ffffff;
-	--color-hover-content-blue:#052c6f;
-	--color-img-blend-backgroud:#0009;
-	--gradient-start: rgb(0 0 0 / 0);
-	--gradient-end: rgba(0 0 0 / .75);
-	--about-background: rgba(0 0 0 / .5);
-	--color-focus-state: rgba(13, 216, 172, 0.753);
+	--about-img-background: rgba(0 0 0 / .5);
+	--color-about-img-border:#ffffff;
+
+
+	/* form */
+	--color-form-input:#052c6f;
+	--color-form-hover:#052c6f;
+	--color-form-accent:#052c6f;
+	
+
+	/* footer */
+	--color-icon-on-footer:#ffffff;
+	--color-form-hover-content:#ffffff;	
+	--color-footer-icon-hover:#ffffff;
+	--color-footer-link-hover-background:#ffffff;
+	--color-footer-icon-hover-content:#052c6f;
+	--color-footer-social-hover:#ffffff;
+	
+	/* algemeen active */
+	--color-active:rgba(255, 0, 0, 0);
 }
 
 
+@media (prefers-color-scheme:dark) {
+	:root:not(.lightMode) {
 
+	/* achtergrond kleuren */
+	--color-background-body:#0a4ab9;
+	--color-background-footer:#052c6f;
+	--color-background-about:#052c6f;
+	
+	/*main  tekst kleuren */
+	--color-text-on-background:#FFFFFFCC;
+	--color-text-on-no-background:#FFFFFFCC;
+
+	/* light toggle */
+	--color-toggle-primary:#052c6f;
+	--color-toggle-secondary:#FFFFFFCC;
+	--color-toggle-hover-focus:#4c8dff;
+
+	/* header*/
+	--color-navbar:#0a4ab9;
+	--color-icon-on-header:#FFFFFFCC;
+	--color-header-icon-hover:#4c8dff;
+	--color-header-icon-hover-background:#052c6f;
+
+	/* carousel */
+	--color-carousel-nav:#052c6f;
+	--color-caro-hover:#4c8dff;
+	--color-carousel-button-hover:#052c6f;
+	--color-carousel-button-hover-content:#4c8dff;
+	--color-img-blend-backgroud:rgba(147, 88, 0, 0.525);
+	--color-carousel-button-border:#4c8dff;
+
+
+	/* movies films */
+	--color-background-focus-hover-state: #4c8dff;
+	--color-h2-hover:#9bc0ff;
+	--gradient-start-film-movie: rgb(0 0 0 / 0);
+	--gradient-end-film-movie: rgba(0 0 0 / .75);
+	--color-visited:#9bc0ff;
+	
+
+
+	/* about */
+	--color-about-text:#FFFFFFCC;
+	--about-img-background: rgba(0 0 0 / .5);
+	--color-about-img-border:#4c8dff;
+	--color-h2-hover-content:#9bc0ff;
+
+
+	/* form */
+	--color-form-input:#FFFFFFCC;
+	--color-form-hover:#052c6f;
+	--color-form-accent:#FFFFFFCC;
+	--color-form-input-background:#0a4ab9;
+	
+
+	/* footer */
+	--color-icon-on-footer:#FFFFFFCC;
+	--color-form-hover-content:#FFFFFFCC;	
+	--color-footer-icon-hover:#FFFFFFCC;
+	--color-footer-link-hover-background:#FFFFFFCC;
+	--color-footer-icon-hover-content:#052c6f;
+	--color-footer-social-hover:#FFFFFFCC;
+	
+	/* algemeen active */
+	--color-active:rgba(255, 0, 0, 0);
+}}
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* header */
+/* light dark */
+/* https://www.youtube.com/watch?v=S-T9XoCMwt4&t=175s */
+header label{
+	width: 3.4em;
+	height: 1.7em;
+	position: relative;
+	display: block;
+	background-color:var(--color-toggle-secondary);
+	border: solid .1em var(--color-toggle-primary);
+	border-radius: 2em;
+	cursor: pointer;
+	transition: 0.8s;
+}
 
+header label:hover, header label:hover{
+	outline:solid 0.1em var(--color-toggle-hover-focus);
+}
+
+header label::before{
+	content:"";
+	width: 1.4em;
+	height: 1.4em;
+	position: absolute;
+	top: .09em;
+	left: .09em;
+	background-color: var(--color-toggle-primary);
+	border-radius: 1.5em;
+	transition: 0.8s;
+}
+
+header input{
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+header input:checked + label{
+	background-color: var(--color-toggle-primary);
+	border: solid .1em var(--color-toggle-secondary);
+}
+
+header input:checked + label::before{
+	left:3.2em;
+	transform: translateX(-100%);
+	background: var(--color-toggle-secondary);
+}
+
+
+#lightbar{
+	background-color:var(--color-toggle-primary);
+	display: flex;
+	height: 2.5em;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#lightbar p{
+	color: var(--color-text-on-background);
+	text-transform: uppercase;
+	font-size: 0.9375em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header nav */
 header svg{
 	fill: var(--color-icon-on-header);
 }
 
 header{
-	background-color: var(--color-background-white);
+	background-color: var(--color-navbar);
 	width: 100%;
 	position: sticky; 
 	top: 0;
@@ -166,7 +347,7 @@ header nav ul li:nth-of-type(3)::after {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: var(--color-background-blue);
+	background-color: var(--color-icon-on-header);
 }
   
 header nav ul li:nth-of-type(3)::before {
@@ -178,58 +359,60 @@ header nav ul li:nth-of-type(3)::before {
 }
 
 header nav ul li:nth-of-type(3):hover:before, header nav ul li:nth-of-type(3):hover::after {
-	background-color: var(--color-hover-content-white);
+	background-color: var(--color-header-icon-hover);
 }
 
 header nav ul li:nth-of-type(3):active:before, header nav ul li:nth-of-type(3):active::after {
-	background-color: var(--color-hover-content-blue);
+	background-color: var(--color-header-icon-hover-background);
 }
 
 nav button:hover svg{
-	fill: var(--color-hover-content-white);
+	fill: var(--color-header-icon-hover);
 }
 
 nav button:active svg{
-	fill: var(--color-hover-content-blue);
+	fill: var(--color-active);
 }
 
 nav button:hover{
-	background-color: var(--color-background-blue);
-	color: var(--color-hover-content-white)
+	background-color: var(--color-header-icon-hover-background);
+	color: var(--color-background-blue)
 }
 
 nav button:active{
-	background-color: var(--color-background-white);
+	background-color: var(--color-header-icon-hover-background);
 	color: var(--color-hover-content-blue)
 }
 
 
 nav .icon-dw-logo:hover, nav .icon-dw-logo:focus{
-	background-color: var(--color-background-blue);
-	fill: var(--color-hover-content-white)
+	background-color: var(--color-header-icon-hover-background);
+	fill: var(--color-header-icon-hover)
 }
 
 nav .icon-dw-logo:active, nav .icon-dw-logo:active{
-	background-color: var(--color-background-white);
-	fill: var(--color-hover-content-blue)
+	background-color: var(--color-active);
+	fill: var(--color-icon-on-header)
 }
 
 
 header a:focus, nav button:focus{
-	outline: solid 0.2em var(--color-button-hover-blue);
+	outline: solid 0.2em var(--color-header-icon-hover-background);
 }
 
 
 
-  
+
+
+
 
 
 
 /* footer */
 
 footer{
-	background-color:var(--color-background-blue);
-	color: var(--color-text-on-blueandimages);
+	background-color:var(--color-background-footer);
+	color: var(--color-text-on-background);
 	padding: 2.5em 0.625em;
 }
 
@@ -247,7 +430,7 @@ footer a{
 }
 
 footer li a{
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 }
 
 footer nav ul{
@@ -269,28 +452,28 @@ footer li{
 }
 
 .icon-dw-logo:hover{
-	fill: var(--color-hover-content-blue);
-	background-color: var(--color-hover-content-white);
+	fill: var(--color-footer-icon-hover-content);
+	background-color: var(--color-footer-icon-hover);
 }
 
 .icon-dw-logo:active{
-	fill: var(--color-hover-content-white);
-	background-color: var(--color-hover-content-blue);
+	fill: var(--color-active);
+	background-color: var(--color-icon-on-footer);
 }
 
 footer a:focus{
-	outline: solid 0.2em var(--color-button-hover-white);
+	outline: solid 0.2em var(--color-footer-icon-hover);
 }
 
 footer nav ul li:hover,
 footer nav ul li:hover a,
 footer nav ul li a:focus {
-    background-color: var(--color-hover-content-white);
-    color: var(--color-hover-content-blue);
+    background-color: var(--color-footer-link-hover-background);
+    color: var(--color-footer-icon-hover-content);
 }
 footer nav ul li:active{
-	background-color: var(--color-hover-content-blue);
-    color: var(--color-hover-content-white);
+	background-color: var(--color-active);
+    color: var(--color-footer-icon-hover-content);
 }
 
 
@@ -330,11 +513,15 @@ footer aside li a svg{
 }
 
 footer aside li a svg:hover{
-	border: solid 0.2em var(--color-button-hover-white);
+	border: solid 0.2em var(--color-footer-social-hover);
+}
+
+footer aside li a:hover{
+	background-color: var(--color-footer-link-hover-background);
 }
 
 footer aside li a svg:active{
-	border: solid 0.2em var(--color-button-hover-blue);
+	border: solid 0.2em var(--color-active);
 }
 
 footer p{

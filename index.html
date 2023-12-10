@@ -13,6 +13,11 @@
 
 <body>
 	<!-- svg's -->
+	
+
+
+
+
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="icon-default" viewBox="0 0 512 512">
 		<path d="m475 256c0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29 40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110z"></path>
@@ -173,9 +178,15 @@
 		</svg>
 
 	<header>
+		<div id="lightbar">
+			<p>light mode:</p>
+			<input type="checkbox" id="light-mode" name="light-mode" value="light-mode"/>
+			<label for="light-mode" tabindex="0" aria-label="light mode toggle"></label>
+		</div>
 		<!-- sticky navigatie -->
 		<nav>
 			<ul>
+				
 				<li><a href="#" aria-label="dreamworks logo, go to homepage"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
 				<li><button type="button" aria-label="open the search bar"><svg class="icon-search"><use xlink:href="#icon-search"></use></svg></button></li>
 				<li><button type="button" aria-label="open the menu"></button></li>
@@ -184,6 +195,8 @@
 	</header>
 
 	<main>
+		
+		
 		
 		<section>
 			<!-- Een carousel met 4 plaatjes, navigatie voor de plaatjes + tekst en buttons absoluut gepositioneerd -->
@@ -450,39 +463,47 @@
 
 			<ul>
 				<li>
-					<a href="#">
-						<div id="campus">
-							<h3>campus</h3>
-						</div>
-					</a>
-					<p>The 9-acre campus in Glendale houses over 1200 employees in the feature film division – 800 of whom are artists and 3D animators, and 200 of whom are technologists and engineers.</p>
+					<article>
+						<a href="#">
+							<div id="campus">
+								<h3>campus</h3>
+							</div>
+						</a>
+						<p>The 9-acre campus in Glendale houses over 1200 employees in the feature film division – 800 of whom are artists and 3D animators, and 200 of whom are technologists and engineers.</p>
+					</article>
 				</li>
 
 				<li>
-					<a href="#">
-						<div id="iconic_feature_films">
-							<h3>iconic feature films</h3>
-						</div>
-					</a>
-					<p>Home to some of the world's most beloved franchises including Shrek, Madagascar, Kung Fu Panda, Trolls, The Boss Baby, The Croods and How to Train Your Dragon, DreamWorks Animation creates award-winning films for a global audience.</p>
+					<article>
+						<a href="#">
+							<div id="iconic_feature_films">
+								<h3>iconic feature films</h3>
+							</div>
+						</a>
+						<p>Home to some of the world's most beloved franchises including Shrek, Madagascar, Kung Fu Panda, Trolls, The Boss Baby, The Croods and How to Train Your Dragon, DreamWorks Animation creates award-winning films for a global audience.</p>
+					</article>
 				</li>
 
 				<li>
-					<a href="#">
-						<div id="award-winning_television">
-							<h3>award-winning television</h3>
-						</div>
-					</a>
-					<p>In 2013, the DWA Television division was launched into being with a groundbreaking deal for hundreds of hours of kids and family programming.</p>
+					<article>
+						<a href="#">
+							<div id="award-winning_television">
+								<h3>award-winning television</h3>
+							</div>
+						</a>
+						<p>In 2013, the DWA Television division was launched into being with a groundbreaking deal for hundreds of hours of kids and family programming.</p>
+					</article>
 				</li>
 
 				<li>
-					<a href="#">
-						<div id="innovative_technology">
-							<h3>innovative technology</h3>
-						</div>
-					</a>
-					<p>Developing for the future and innovating in the present.  DreamWorks Technology unleashes art.</p>
+					<article>
+						<a href="#">
+							<div id="innovative_technology">
+								<h3>innovative technology</h3>
+							</div>
+						</a>
+						<p>Developing for the future and innovating in the present.  DreamWorks Technology unleashes art.</p>
+					</article>
 				</li>
 			</ul>
 		</section>

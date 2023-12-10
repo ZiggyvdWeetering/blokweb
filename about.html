@@ -169,6 +169,11 @@
 		</svg>
 
     <header>
+		<div id="lightbar">
+			<p>light mode:</p>
+			<input type="checkbox" id="light-mode" name="light-mode" value="light-mode"/>
+			<label for="light-mode" tabindex="0" aria-label="light mode toggle"></label>
+		</div>
 		<nav>
 			<ul>
 				<li><a href="#" aria-label="dreamworks logo, go to homepage"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
@@ -179,7 +184,104 @@
 	</header>
 
     <main>
+		<section>
+			<div>
+				<h1>about dreamworks</h1>
+				<h2>who are we</h2>
+				<p>We tell stories about dreams, and the journeys our unconventional heroes take to make them come true.</p>
+			</div>
+		</section>
 
+		<section>
+			<article>
+				<h2>dreamWorks fantasia</h2>
+				<figure>
+					<img src="./images/about-diptych-intro-mobile.jpg" alt="a photo of the movie trolls">
+					<figcaption>for 25 years, dreamworks animation has considered itself and its characters part of your family.</figcaption>
+				</figure>
+
+				<p>We have introduced a lovable curmudgeonly ogre, an overly optimistic pink-haired troll, a noodle-slurping martial arts obsessed panda, a business minded baby and a bashful yet charismatic Viking hero and his pet dragon, to name a few. Thanks to movies like Shrek, Trolls, Kung Fu Panda, How to Train Your Dragon, Madagascar, and The Boss Baby, and television series like Gabby's Dollhouse, Jurassic World Camp Cretaceous, Trollhunters, Spirit Riding Free, and All Hail King Julien, DreamWorks Animation is recognized across the globe as a leader in quality family entertainment.
+
+				We tell stories about dreams and the journeys unconventional heroes take to make them come true. With hilarious characters, genuine emotion, and bold new worlds, our original stories engage audiences across multiple generations. Striving for the highest quality animation and the best storytelling imaginable, DreamWorks has delivered innovative films and television series that encourage us all to imagine something different.</p>
+			</article>
+		</section>
+
+
+
+		<section>
+			<article>
+				<h2>campus</h2>
+
+				<img src="./images/about-creative-haven.jpg" alt="a photo of the movie, the croods">
+
+				<p>The 13-acre campus in Glendale houses over 1400 employees in the feature film and television divisions – including artists, 		animators, technologists and engineers.
+
+				Every aspect of a production can be accomplished at the Glendale campus, which boasts a vibrant artistic culture that encourages creative pioneers, an open exchange of ideas, and technological innovation in service of storytelling -- all overseen by a leadership team with hands-on creative experience.</p>
+
+				<a href="#">more about our campus</a>
+			</article>
+		</section>
+
+
+
+		<section>
+			<article>
+				<h2>iconic feature films</h2>
+				<img src="./images/about-movies.jpg" alt="a photo of the movie kungfu panda">
+				<p>Home to some of the world’s most beloved franchises including Shrek, Madagascar, Kung Fu Panda, Trolls, The Boss Baby, The Croods and How to Train Your Dragon, DreamWorks Animation creates award-winning films for a global audience. Dedicated to helping families dream and laugh together, DreamWorks’ incredible cast of artists, storytellers, engineers and innovators have created 36 breathtaking animated feature films in the last 25 years, generating more than $15 billion at the global box office. Built on the history of brand and legacy, DWA pursues the future of storytelling in all platforms by crafting cutting-edge technology and immersion in fantastical worlds.</p>
+			</article>
+		</section>
+
+
+
+		<section>
+			<article>
+				<h2>award-winning television</h2>
+				<img src="./images/about-tv.jpg" alt="a photo of the tv series she-ra">
+				<p>In 2013, the DWA Television division was launched into being with a groundbreaking deal for hundreds of hours of kids and family programming. Driven by the belief that great stories inspire great possibilities, the creative pioneers of DreamWorks Animation Television have since crafted more than 1,000 episodes of original TV programming in just five years. Delivering fully immersive worlds served up with compelling characters, the prolific studio has launched several award-winning and beloved series such as Trollhunters from Guillermo del Toro, Spirit Riding Free, The Boss Baby: Back in Business, She-Ra and the Princesses of Power, and many more.</p>
+			</article>
+		</section>
+
+		<section>
+			<article>
+				<h2>innovative technology</h2>
+				<img src="./images/about-tech.jpg" alt="a photo of the movie bilby">
+				<p>A leader in technological innovation that is at the forefront of shaping the industry, DreamWorks has earned 8 prestigious Scientific Achievement Awards from the Academy of Motion Picture Arts and Sciences, most recently receiving a 2018 Sci-Tech Award for Premo, DreamWorks' industry-leading animation platform. How to Train Your Dragon: The Hidden World marked the feature film debut of DreamWorks’ new proprietary physically-based renderer, Moonray, allowing artists to create stunning imagery and visually richer worlds.</p>
+
+				<a href="#">more about technology</a>
+			</article>
+		</section>
+		
+		<section>
+			<!-- sectie met info over hoe je dreamworks kan contacten en een form om dat te doen -->
+			<h2>stay in touch</h2>
+			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
+
+			
+			<form role="form" action="#">
+				<h5>enter birth date</h5>
+				<fieldset>
+					<div>
+						<label for="month">Month</label>
+						<input type="number" name="month" id="month" autocomplete="off" aria-label="month" min="1" max="12" required>
+					</div>
+				
+					<div>
+						<label for="day">Day</label>
+						<input type="number" name="day" id="day" autocomplete="off" aria-label="day" min="1" max="31" required>
+					</div>
+				
+					<div>
+						<label for="year">Year</label>
+						<input type="number" name="year" id="year" autocomplete="off" aria-label="year" min="1900" max="2023" required>
+					</div>
+				</fieldset>
+
+				<button type="button" aria-label="click here to continue to the next form requirements">next</button>
+			</form>
+
+			<img src="images/signup-trolls.jpg" alt="a photo of multiple trolls from the movie trolls">
+		</section>
     </main>
 
 	<footer>
@@ -235,6 +337,6 @@
 
 	</footer>
     
-    
+    <script defer src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(5) h2 {
 	font-family: "TT Norms ExtraBold";
-	color: var(--color-text-on-white);
+	color: var(--color-text-on-background);
 	font-size: 1.625em;
 	text-align: center;
 	padding: 1.2em 0em 0.8em 0em;
@@ -61,7 +61,7 @@ section:nth-of-type(1) nav ul li{
 
 section:nth-of-type(1) nav ul li a::before {
     content: " ";
-	background-color: var(--color-background-blue);
+	background-color: var(--color-carousel-nav);
     display: inline-block;  /* van de dreamworks website */
     width: 100%; 
     height: 0.25em; 
@@ -72,7 +72,7 @@ section:nth-of-type(1) div{
 	left: 0;
 	bottom: 1.8em;
 	padding: 0em 0.625em 0em 0.625em;
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 	z-index: 1;
 	width: 100%;
 }
@@ -92,7 +92,7 @@ section:nth-of-type(1) div p{
 body main section:nth-of-type(1) h2{
 	font-family: "TT Norms ExtraBold";
 	font-size: 1.875em;
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 	
 }
 
@@ -107,18 +107,18 @@ section:nth-of-type(1) div button{
     cursor: pointer;
     font-size: 0.6875em;
     letter-spacing: .05em;
-    border: 0.0625em solid var(--color-text-on-blueandimages);
-	color: var(--color-text-on-blueandimages);
+    border: 0.0625em solid var(--color-carousel-button-border);
+	color: var(--color-text-on-background);
 }
 
 section:nth-of-type(1) div button:hover, section:nth-of-type(1) div button:focus{
-	background-color: var(--color-button-hover-white);
-	color: var(--color-hover-content-blue)
+	background-color: var(--color-carousel-button-hover);
+	color: var(--color-carousel-button-hover-content)
 }
 
 section:nth-of-type(1) div button:active, section:nth-of-type(1) div button:active{
-	background-color: var(--color-button-hover-blue);
-	color: var(--color-hover-content-white);
+	background-color: var(--color-active);
+	color: var(--color-carousel-button-hover-content);
 }
 
 
@@ -128,7 +128,7 @@ section:nth-of-type(1) nav ul li a:hover:before, section:nth-of-type(1) nav ul l
 }
 
 section:nth-of-type(1) nav ul li a:active:before{
-	background-color: var(--color-button-hover-white);
+	background-color: var(--color-active);
 }
 
 
@@ -140,22 +140,20 @@ section:nth-of-type(1) nav ul li a:active:before{
 
 h3{
 	font-size: 0.9375em;
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 	padding-top: 2em;
 	font-family: "TT Norms Bold";
 }
 
 h4{
 	font-size: 0.6875em;
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 	letter-spacing: .05em;
 	font-weight: normal;
 	margin-top: 0.3125em;
 }
 
-h2 a, button{
-	color: var(--color-text-on-white);
-}
+
 
 main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
 	background-color:var(--color-img-blend-backgroud);
@@ -189,7 +187,7 @@ main section:nth-of-type(2) div, main section:nth-of-type(3) div {
   }
   
 main section:nth-of-type(2) div, section:nth-of-type(3) div{
-	background-image: linear-gradient(var(--gradient-start), var(--gradient-end));
+	background-image: linear-gradient(var(--gradient-start-film-movie), var(--gradient-end-film-movie));
   	margin:0em;
   	padding:.5em;
 	right: 0;
@@ -200,29 +198,35 @@ main section:nth-of-type(2) h3, main section:nth-of-type(2) h4, main section:nth
 }
 
 h2 a:hover, h2 a:focus{
-	color: var(--color-h2-hover);
+	color: var(--color-h2-hover-content);
+	background-color: var(--color-background-focus-hover-state);
 }
 h2 a:active{
-	color: var(--color-h2-hover);
+	color: var(--color-active);
+}
+
+h2 a:visited{
+    color: var(--color-visited);
 }
 		
-img:hover{
+img:hover:not(main section:nth-of-type(5) img){
 	mix-blend-mode: overlay;
+	z-index: 100;
 }
-img:active{
-	mix-blend-mode: lighten;
+img:active :not(main section:nth-of-type(5) img){
+	mix-blend-mode:lighten;
 }
 
 
 /* about dreamworks */
 
 main section:nth-of-type(4) {
-	background-color: var(--color-background-blue);
+	background-color: var(--color-background-about);
 	margin-top: 3.54545em;
 }
 
 main section:nth-of-type(4) h2 a{
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 }
 
 main section:nth-of-type(4) h2{
@@ -259,7 +263,7 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(var(--about-background), var(--about-background));
+	background-image: linear-gradient(var(--about-img-background), var(--about-img-background));
   }
 
   main section:nth-of-type(4) #campus h3, #iconic_feature_films h3, #award-winning_television h3, #innovative_technology h3{
@@ -290,7 +294,7 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 }
 
 section:nth-of-type(4) p{
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-text-on-background);
 	text-align: center;
 	font-size: 0.6875em;
 	color: var(--color-about-text);
@@ -301,21 +305,28 @@ section:nth-of-type(4) p{
 }
 
 main section:nth-of-type(4) h2 a:hover, main section:nth-of-type(4) h2 a:focus{
-	color: var(--color-h2-hover);
+	color: var(--color-h2-hover-content);
 } 
 
 main section:nth-of-type(4) h2 a:active{
-	color: var(--color-text-on-blueandimages);
+	color: var(--color-active);
 } 
 
+main section:nth-of-type(4) h2 a:visited{
+	color: var(--color-visited);
+}
+
 main section:nth-of-type(4) #campus:hover, #iconic_feature_films:hover, #award-winning_television:hover, #innovative_technology:hover{
-	border: solid 0.5em var(--color-button-hover-white)
+	border: solid 0.5em var(--color-about-img-border)
+}
+
+main section:nth-of-type(4) #campus:focus, #iconic_feature_films:focus, #award-winning_television:focus, #innovative_technology:focus{
+	border: solid 0.5em var(--color-about-img-border)
 }
 
 main section:nth-of-type(4) #campus:active, #iconic_feature_films:active, #award-winning_television:active, #innovative_technology:active{
-	border: solid 0.5em var(--color-button-hover-blue)
+	border: solid 0.5em var(--color-active)
 }
-
 
 
 
@@ -330,7 +341,7 @@ body main section:nth-of-type(5){
 
 body main section:nth-of-type(5) h2, body main section:nth-of-type(5) p, body main section:nth-of-type(5) h5 {
 	text-align: initial;
-	color: var(--color-text-on-white);
+	color: var(--color-form-accent);
 	margin: 0;
 	padding: 0;
 	font-size:1.25em; 
@@ -375,7 +386,7 @@ form fieldset {
   
 form fieldset label {
 	margin-bottom: 1em;
-	color: var(--color-text-on-white);
+	color: var(--color-form-accent);
 	text-decoration: none;
 	font-size: 0.6875em;
 	letter-spacing: .05em;
@@ -385,14 +396,15 @@ form fieldset label {
   
 form fieldset input {
 	width: 6.5em;
-	color: var(--color-text-on-white);
+	color: var(--color-form-accent);
 	border: 0;
-	border-bottom: 0.0625em solid var(--color-background-blue);
+	border-bottom: 0.0625em solid var(--color-form-accent);
 	margin-bottom: 1em; 
+	background-color: var(--color-form-input-background);
 }
 
 form fieldset input:hover, form fieldset input:focus {
-	outline: 0.0625em solid var(--color-button-hover-blue); 
+	outline: 0.0625em solid var(--color-form-hover); 
 }
   
 form fieldset div{
@@ -411,17 +423,18 @@ form button{
     cursor: pointer;
     font-size: 0.6875em;
     letter-spacing: .05em;
-    border: 0.0625em solid var(--color-text-on-white);
+    border: 0.0625em solid var(--color-form-accent);
+	color: var(--color-form-accent);
 }
   
 form button:hover, form button:focus{
-	background-color: var(--color-button-hover-blue);
-	color: var(--color-hover-content-white);
+	background-color: var(--color-form-hover);
+	color: var(--color-form-hover-content);
 }
 
 form button:active{
-	background-color: var(--color-button-hover-white);
-	color: var(--color-hover-content-blue);
+	background-color: var(--color-active);
+	color: var(--color-form-accent);
 }
 
 /* footer */
