@@ -2,21 +2,9 @@
 /* CSS REMEDY */
 /**************/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
-	text-decoration: none;
-	list-style: none
-}
-
-body{
-	font-family:"TT Norms Regular" ;
-	background-color: var(--color-background-body);
-}
-
 /* geimporteerde fonts */
 
+/* bron: https://www.onlinewebfonts.com/download/07bc241768c969f6b6a27a7bf0dfb490 */
 @font-face {
     font-family: "TT Norms Regular";
 	src: url(../fonts/TT\ Norms\ Regular.ttf);
@@ -32,10 +20,28 @@ body{
 	src: url(../fonts/TT\ Norms\ ExtraBold.ttf);	
 }
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+	text-decoration: none;
+	list-style: none
+}
+
+
+/* standaard body font */
+body{
+	font-family:"TT Norms Regular" ;
+	background-color: var(--color-background-body);
+}
+
+
 /* alle headings en "button" tekst zijn in hoofdletters  */
 h1,h2,h3,h4,h5,button{
 	text-transform: uppercase;
 }
+
 
 /* normale tekst maten */
 p{
@@ -45,15 +51,27 @@ p{
 }
 
 
-
-
-
-
-
-
 /* de muis word een pointer als je op een "button" staat */
 button{
 	cursor: pointer;
+}
+
+
+/* https://www.youtube.com/watch?v=rD3db6-vmuo */
+/* om nav te skippen */
+.skiplink {
+	position: absolute;
+	top: -2.5em;
+	left: 0;
+	background-color: var(--color-background-body);
+	color: var(--color-text-on-no-background);
+	padding: 8px;
+	z-index: 10000;
+}
+  
+
+.skiplink:focus {	
+	top: 0;
 }
 
 
@@ -122,6 +140,7 @@ button{
 }
 
 
+/* dark mode */
 @media (prefers-color-scheme:dark) {
 	:root:not(.lightMode) {
 
@@ -160,15 +179,12 @@ button{
 	--gradient-start-film-movie: rgb(0 0 0 / 0);
 	--gradient-end-film-movie: rgba(0 0 0 / .75);
 	--color-visited:#9bc0ff;
-	
-
 
 	/* about */
 	--color-about-text:#FFFFFFCC;
 	--about-img-background: rgba(0 0 0 / .5);
 	--color-about-img-border:#4c8dff;
 	--color-h2-hover-content:#9bc0ff;
-
 
 	/* form */
 	--color-form-input:#FFFFFFCC;
@@ -194,7 +210,7 @@ button{
 /* JOUW STYLING */
 /****************/
 
-/* light dark */
+/* light dark toggle*/
 /* https://www.youtube.com/watch?v=S-T9XoCMwt4&t=175s */
 header label{
 	width: 3.4em;
@@ -208,10 +224,7 @@ header label{
 	transition: 0.8s;
 }
 
-header label:hover, header label:hover{
-	outline:solid 0.1em var(--color-toggle-hover-focus);
-}
-
+/* het balletje dat schuift */
 header label::before{
 	content:"";
 	width: 1.4em;
@@ -224,24 +237,27 @@ header label::before{
 	transition: 0.8s;
 }
 
+/* verstoppen van de checkbox */
 header input{
 	width: 0;
 	height: 0;
 	visibility: hidden;
 }
 
+/* wanneer de label gecheckt is veranderd de kleur */
 header input:checked + label{
 	background-color: var(--color-toggle-primary);
 	border: solid .1em var(--color-toggle-secondary);
 }
 
+/* wanneer de label gecheckt is veranderd de kleur en verschuift het balletje */
 header input:checked + label::before{
 	left:3.2em;
 	transform: translateX(-100%);
 	background: var(--color-toggle-secondary);
 }
 
-
+/* de container van de light bar en titel samen*/
 #lightbar{
 	background-color:var(--color-toggle-primary);
 	display: flex;
@@ -250,30 +266,21 @@ header input:checked + label::before{
 	align-items: center;
 }
 
+/* de titel van de light bar*/
 #lightbar p{
 	color: var(--color-text-on-background);
 	text-transform: uppercase;
 	font-size: 0.9375em;
 }
 
+/* statussen wanneer je de toggle hovered, focussed enz. */
+header label:hover, header label:hover{
+	outline:solid 0.1em var(--color-toggle-hover-focus);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header label:focus, header label:focus{
+	outline:solid 0.1em var(--color-toggle-hover-focus);
+}
 
 
 
@@ -283,10 +290,13 @@ header input:checked + label::before{
 
 
 /* header nav */
+
+/* kleur van icoon */
 header svg{
 	fill: var(--color-icon-on-header);
 }
 
+/* de header balk  */
 header{
 	background-color: var(--color-navbar);
 	width: 100%;
@@ -295,15 +305,19 @@ header{
 	z-index:2 ;
 }
 
+
 header nav{
 	padding-top: 0.625em;
 	padding-bottom: 0.625em;
 }
 
+/* zet alles naast elkaar */
 header nav ul{
 	display: flex;
 }
 
+
+/* verschuift alles rechts van het logo naar rechts */
 header nav ul li:nth-of-type(1){
 	margin-right: auto;
 }
@@ -312,16 +326,19 @@ header nav li a{
 	margin-left: 0.625em;
 }
 
+/* grootte van het logo */
 header nav ul li:nth-of-type(1) svg{
 	width: 6.5625em;
 	height: 3.875em;
 }
 
+/* grootte van de icons */
 header nav ul li:nth-of-type(2) svg{
 	width: 1.5em;
 	height: 1.5em;
 }
 
+/* button op de icons */
 header nav ul li button{ 
 	padding: 1.5em;
 	display: flex; 
@@ -329,7 +346,7 @@ header nav ul li button{
 	border: none;
 }
 
-
+/* positie van het hamburger menu */
 header nav ul li:nth-of-type(3) {
 	background: none;
 	border: none;
@@ -338,6 +355,7 @@ header nav ul li:nth-of-type(3) {
 }
   
 /* https://www.youtube.com/watch?v=zGiirUiWslI */
+/* before en after voor het hamburger menu */
 header nav ul li:nth-of-type(3)::before,
 header nav ul li:nth-of-type(3)::after {
 	content: '';
@@ -350,6 +368,7 @@ header nav ul li:nth-of-type(3)::after {
 	background-color: var(--color-icon-on-header);
 }
   
+/* schuift ze uit elkaar */
 header nav ul li:nth-of-type(3)::before {
 	margin-top: -0.1875em; 
 }
@@ -358,6 +377,7 @@ header nav ul li:nth-of-type(3)::before {
 	margin-top: 0.1875em; 
 }
 
+/* kleuren van de balkjes */
 header nav ul li:nth-of-type(3):hover:before, header nav ul li:nth-of-type(3):hover::after {
 	background-color: var(--color-header-icon-hover);
 }
@@ -366,6 +386,7 @@ header nav ul li:nth-of-type(3):active:before, header nav ul li:nth-of-type(3):a
 	background-color: var(--color-header-icon-hover-background);
 }
 
+/* statussen */
 nav button:hover svg{
 	fill: var(--color-header-icon-hover);
 }
@@ -407,20 +428,23 @@ header a:focus, nav button:focus{
 
 
 
-
 /* footer */
 
+/* achtergrond van footer */
 footer{
 	background-color:var(--color-background-footer);
 	color: var(--color-text-on-background);
 	padding: 2.5em 0.625em;
 }
 
+/* extra positionering elementen */
 footer ul{
 	margin-left: 1.72em;
 	margin-right: 1.72em;
 }
 
+
+/* de klikbare links */
 footer a{
 	text-transform: uppercase;
 	font-size: 0.6875em;
@@ -429,16 +453,20 @@ footer a{
 	text-align: center;
 }
 
+
 footer li a{
 	color: var(--color-text-on-background);
 }
 
+
+/* een grid om de nav elementen in een soort van cubus te zetten */
 footer nav ul{
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr;
 	margin-top: 1.875em;
 }
 
+/* styling van de containers van de link */
 footer li{
 	text-align: center;
 	padding-top:0.313em;
@@ -446,10 +474,85 @@ footer li{
 	cursor: pointer;
 }
 
+/* footer dreamworks icoon */
 .footerlogo {
 	display: flex;
 	justify-content: center;
 }
+
+
+footer a .icon-dw-logo{
+	width: 9.5454em;
+    height: 5.6363em;
+	fill: var(--color-icon-on-footer);	
+}
+
+footer h5{
+	margin-top:1.875em ;
+	padding-bottom:0.455em;
+}
+
+
+/* zorgt ervoor dat er een kolom overgeslagen word */
+footer nav ul li:last-child{
+	grid-column: -2;
+}
+
+
+/* de social media links iconen */
+footer aside{
+	margin-top: 1.875em;
+	margin-bottom:1.875em ;	
+}
+
+aside ul{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+	margin-top: .7em;	
+}
+
+/* iconen social media */
+footer aside li a svg{
+	width: 2.7272em;
+	height: 2.7272em;	
+}
+
+
+/* de tekst onde rde iconen, privacy policy */
+footer p{
+	font-size: 0.5em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .05em;
+}
+
+/* zet de twee mini images naast elkaar */
+footer div{
+	text-align: center;
+	margin-top: 0.625em;
+}
+
+/* grootte van de mini images */
+footer div img{
+	width:3.01em ;
+	height:1em ;
+}
+
+/* statussen */
+footer aside li a svg:hover{
+	border: solid 0.2em var(--color-footer-social-hover);
+}
+
+footer aside li a:hover{
+	background-color: var(--color-footer-link-hover-background);
+}
+
+footer aside li a svg:active{
+	border: solid 0.2em var(--color-active);
+}
+
 
 .icon-dw-logo:hover{
 	fill: var(--color-footer-icon-hover-content);
@@ -474,69 +577,4 @@ footer nav ul li a:focus {
 footer nav ul li:active{
 	background-color: var(--color-active);
     color: var(--color-footer-icon-hover-content);
-}
-
-
-footer a .icon-dw-logo{
-	width: 9.5454em;
-    height: 5.6363em;
-	fill: var(--color-icon-on-footer);	
-}
-
-footer h5{
-	margin-top:1.875em ;
-	padding-bottom:0.455em;
-}
-
-footer nav ul li:last-child{
-	grid-column: -2;
-}
-
-
-
-footer aside{
-	margin-top: 1.875em;
-	margin-bottom:1.875em ;	
-}
-
-aside ul{
-	display: flex;
-	flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
-	margin-top: .7em;	
-}
-
-footer aside li a svg{
-	width: 2.7272em;
-	height: 2.7272em;	
-}
-
-footer aside li a svg:hover{
-	border: solid 0.2em var(--color-footer-social-hover);
-}
-
-footer aside li a:hover{
-	background-color: var(--color-footer-link-hover-background);
-}
-
-footer aside li a svg:active{
-	border: solid 0.2em var(--color-active);
-}
-
-footer p{
-	font-size: 0.5em;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: .05em;
-}
-
-footer div{
-	text-align: center;
-	margin-top: 0.625em;
-}
-
-footer div img{
-	width:3.01em ;
-	height:1em ;
 }

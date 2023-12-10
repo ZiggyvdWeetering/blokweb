@@ -8,7 +8,7 @@
 	<link href="styles/styleabout.css" rel="stylesheet">
 </head>
 <body>
-
+	<!-- svg's voor de iconen-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="icon-default" viewBox="0 0 512 512">
 		<path d="m475 256c0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29 40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110z"></path>
@@ -169,11 +169,15 @@
 		</svg>
 
     <header>
+		<!-- een skiplink, bron: https://www.youtube.com/watch?v=rD3db6-vmuo -->
+		<a href="#maincontent" class="skiplink">skip to main content</a>
 		<div id="lightbar">
 			<p>light mode:</p>
 			<input type="checkbox" id="light-mode" name="light-mode" value="light-mode"/>
 			<label for="light-mode" tabindex="0" aria-label="light mode toggle"></label>
 		</div>
+
+		<!-- sticky navigatie -->
 		<nav>
 			<ul>
 				<li><a href="index.html" aria-label="dreamworks logo, go to homepage"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a></li>
@@ -183,7 +187,10 @@
 		</nav>
 	</header>
 
-    <main>
+	<!-- een lightbar, techniek uit de les, vormgevign knop bron: https://www.youtube.com/watch?v=S-T9XoCMwt4&t=343s -->
+    <main id="maincontent">
+
+		<!-- een sectie met een background image via css -->
 		<section>
 			<div>
 				<h1>about dreamworks</h1>
@@ -192,14 +199,11 @@
 			</div>
 		</section>
 
+		<!-- sectie met de class hidden voor scroll animatie en een article hierin-->
 		<section class="hidden">
 			<article>
 				<h2>dreamWorks fantasia</h2>
-				<figure>
-					<img src="./images/about-diptych-intro-mobile.jpg" alt="a photo of the movie trolls">
-					<figcaption>for 25 years, dreamworks animation has considered itself and its characters part of your family.</figcaption>
-				</figure>
-
+				<img src="./images/about-diptych-intro-mobile.jpg" alt="for 25 years, dreamworks animation has considered itself and its characters part of your family + a photo of the movie trolls">
 				<p>We have introduced a lovable curmudgeonly ogre, an overly optimistic pink-haired troll, a noodle-slurping martial arts obsessed panda, a business minded baby and a bashful yet charismatic Viking hero and his pet dragon, to name a few. Thanks to movies like Shrek, Trolls, Kung Fu Panda, How to Train Your Dragon, Madagascar, and The Boss Baby, and television series like Gabby's Dollhouse, Jurassic World Camp Cretaceous, Trollhunters, Spirit Riding Free, and All Hail King Julien, DreamWorks Animation is recognized across the globe as a leader in quality family entertainment.
 
 				We tell stories about dreams and the journeys unconventional heroes take to make them come true. With hilarious characters, genuine emotion, and bold new worlds, our original stories engage audiences across multiple generations. Striving for the highest quality animation and the best storytelling imaginable, DreamWorks has delivered innovative films and television series that encourage us all to imagine something different.</p>
@@ -207,23 +211,19 @@
 		</section>
 
 
-
+		<!-- sectie met de class hidden voor scroll animatie en een article hierin-->
 		<section class="hidden">
 			<article>
 				<h2>campus</h2>
-
 				<img src="./images/about-creative-haven.jpg" alt="a photo of the movie, the croods">
-
 				<p>The 13-acre campus in Glendale houses over 1400 employees in the feature film and television divisions – including artists, 		animators, technologists and engineers.
-
 				Every aspect of a production can be accomplished at the Glendale campus, which boasts a vibrant artistic culture that encourages creative pioneers, an open exchange of ideas, and technological innovation in service of storytelling -- all overseen by a leadership team with hands-on creative experience.</p>
-
 				<a href="#">more about our campus</a>
 			</article>
 		</section>
 
 
-
+		<!-- sectie met de class hidden voor scroll animatie en een article hierin-->
 		<section class="hidden">
 			<article>
 				<h2>iconic feature films</h2>
@@ -233,7 +233,7 @@
 		</section>
 
 
-
+		<!-- sectie met de class hidden voor scroll animatie en een article hierin-->
 		<section class="hidden">
 			<article>
 				<h2>award-winning television</h2>
@@ -242,24 +242,26 @@
 			</article>
 		</section>
 
+
+		<!-- sectie met de class hidden voor scroll animatie en een article hierin-->
 		<section class="hidden">
 			<article>
 				<h2>innovative technology</h2>
 				<img src="./images/about-tech.jpg" alt="a photo of the movie bilby">
 				<p>A leader in technological innovation that is at the forefront of shaping the industry, DreamWorks has earned 8 prestigious Scientific Achievement Awards from the Academy of Motion Picture Arts and Sciences, most recently receiving a 2018 Sci-Tech Award for Premo, DreamWorks' industry-leading animation platform. How to Train Your Dragon: The Hidden World marked the feature film debut of DreamWorks’ new proprietary physically-based renderer, Moonray, allowing artists to create stunning imagery and visually richer worlds.</p>
-
 				<a href="#">more about technology</a>
 			</article>
 		</section>
 		
+
+		<!-- sectie met info over hoe je dreamworks kan contacten en een form om dat te doen. ook is hier de class hidden -->
 		<section class="hidden">
-			<!-- sectie met info over hoe je dreamworks kan contacten en een form om dat te doen -->
 			<h2>stay in touch</h2>
 			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
 
-			
+			<!-- form voor invoeren van verjaardag -->
 			<form role="form" action="#">
-				<h5>enter birth date</h5>
+				<h3>enter birth date</h3>
 				<fieldset>
 					<div>
 						<label for="month">Month</label>
@@ -284,8 +286,10 @@
 		</section>
     </main>
 
-	<footer>
 
+	<!-- een footer met nav en links naar social media -->
+	<footer>
+		<!-- dreamworks logo -->
 		<a href="index.html" aria-label="dreamworks logo, go to homepage" class="footerlogo"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
 
 		<nav>
@@ -301,9 +305,10 @@
 			</ul>
 		</nav>		
 
+		<!-- social media links + icon -->
 		<aside>
-			<!-- <h5>follow dreamworks</h5> -->
-
+			<!-- <h4>follow dreamworks -->
+			<h4>follow dreamworks</h4>
 			<ul>
 				<li>
 				  <a href="#" aria-label="facebook logo, go to facebook">
@@ -328,15 +333,18 @@
 			  </ul>
 			  
 		</aside>
+		<!-- Privacy policy -->
 		<p>© 2023 DreamWorks Animation All Rights Reserved. Privacy Policy | CA Notice | Terms of Service | YouTube Terms of Service | Google Privacy Policy </p>
 
+
+		<!-- div om de items naast elkaar te zetten onder in de footer -->
 		<div>
             <img src="images/netapp-white.jpg" alt="netapp logo">
 			<img src="images/lenovo-blue.png" alt="lenovo logo">
         </div>
 
 	</footer>
-    
+    <!-- script tag om javascript te linken -->
     <script defer src="scripts/script.js"></script>
 </body>
 </html>

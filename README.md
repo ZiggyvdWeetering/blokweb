@@ -80,11 +80,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/breakdown_fed.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### tweede page: 
+  <img src="./readme-images/A4-2.png" width="375px" alt="code background img">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -138,9 +136,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   wel in de container moest maar de p niet. En tot slot was het lastig om de container een donkere kleur te geven omdat er al een background img in zat, dus hiervoor heb 
   ik een online bron gebruikt.
 
-  <img src="./images/Schermafbeelding 2023-12-01 131507.png" width="375px" alt="eindrusultaat background img">
-  <img src="./images/Schermopname (394).png" width="375px" alt="code background img">
-  <img src="./images/Schermopname (395).png" width="375px" alt="code background img">
+  <img src="./readme-images/Schermafbeelding2023-12-01131507.png" width="375px" alt="eindrusultaat background img">
+  <img src="./readme-images/Schermopname(394).png" width="375px" alt="code background img">
+  <img src="./readme-images/Schermopname(395).png" width="375px" alt="code background img">
+  
   
   
 
@@ -172,6 +171,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  ### Bevindingen
+  Lijst met je bevindingen die in de test naar voren kwamen:
+
+  - Er worden meerdere h1's per pagina gebruikt (verbeterd)
+  - De tekst van foto's met tekst kan je niet terugvinden in de alt (verbeterd)
+  - Links zijn soms lastig om te zien, voornamelijk de h2's (verbeterd)
+  - Op mobiel formaat is er geen focus status voor de navigatie (verbeterd)
+  - Er is geen dark modus (verbeterd)
+  - Als je tekst naar 200% zet op mobiel formaat is het amper leesbaar (hetzelfde)
+  - Achtergrond video's kunnen niet gepauzeerd worden (ik heb uiteindelijk geen achtergrond video gebruikt)
+  - Op groot formaat houden niet alle animaties zich aan de reduced motion media query (niet verbeterd)
+  - Het contrast van tekst op afbeeldingen is soms niet goed (hetzelfde)
 
 </details>
 
@@ -208,10 +220,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ ik ben erachter gekomen dat mijn html goed in elkaar zat, hoe ik een menu kan maken met javascript. Ook dat de focus op de img niet belangrijk is.
 
 </details>
 
@@ -253,8 +262,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. een skiplink, bron: https://www.youtube.com/watch?v=rD3db6-vmuo
+  2. een lightbar, techniek uit de les, vormgevign knop bron: https://www.youtube.com/watch?v=S-T9XoCMwt4&t=343s -->
 
+  3. fonts: https://www.onlinewebfonts.com/download/07bc241768c969f6b6a27a7bf0dfb490
+  4. light dark toggle https://www.youtube.com/watch?v=S-T9XoCMwt4&t=175s
+  5. before en after elementen: https://www.youtube.com/watch?v=zGiirUiWslI
+  6. scroll animatie met reduced media query, maar helaas werkt de reduced media niet bron: https://www.youtube.com/watch?v=T33NN_pPeNI
+  7. ligh dark functie bron: https://codepen.io/Ziggy23/pen/RwvdBdr
 </details>

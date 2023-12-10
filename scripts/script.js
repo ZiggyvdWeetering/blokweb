@@ -1,16 +1,22 @@
 // JavaScript Document
+
+// test
 console.log("hi");
 
+// vars om elementen in de html te gebruiken
+
+// dom manipulatie
 var h1element = document.querySelector("body main section:nth-of-type(1) h2");
 var carouselnav1 = document.querySelector("section:nth-of-type(1) nav ul li:nth-of-type(1) a")
 var carouselnav2 = document.querySelector("section:nth-of-type(1) nav ul li:nth-of-type(2) a")
 var carouselnav3 = document.querySelector("section:nth-of-type(1) nav ul li:nth-of-type(3) a")
 var carouselnav4 = document.querySelector("section:nth-of-type(1) nav ul li:nth-of-type(4) a")
 
+// light dark mode
 var lightModeCheck = document.querySelector("header input");
 
 
-
+// elementen klikbaar maken voor dom manipulatie
 if (carouselnav1) {
   carouselnav1.addEventListener("click", eerste_h2);
 }
@@ -49,7 +55,8 @@ function vierde_h2(){
 
 
 
-// ligh dark functie
+// ligh dark functie bron: https://codepen.io/Ziggy23/pen/RwvdBdr
+// ik snap het nog niet zo goed
 lightModeCheck.addEventListener('change', veranderd);
 
 function veranderd() {

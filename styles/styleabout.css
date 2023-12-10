@@ -1,4 +1,7 @@
 
+
+/* scroll animatie met reduced media query, maar helaas werkt de reduced media niet */
+/* bron: https://www.youtube.com/watch?v=T33NN_pPeNI */
 @media (prefers-reduced-motion: reduce) {
     .hidden {
         transition: none;
@@ -22,99 +25,13 @@ img{
     width: 100%;
 }
 
-figcaption{
-    display: none;
-}
-
-h1{
-    font-family: "TT Norms Regular";
-    font-size: 0.6875em;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    margin-bottom: 0.3125em;
-    font-size: 0.75em;
-    font-weight: normal;
-    color: var(--color-text-on-background);
-}
-
-section :first-child h2{
-    font-family: "TT Norms Bold";
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 2.125em;
-    color: var(--color-text-on-background);
-}
-
-section:not(:first-child) {
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-    padding-bottom: 2.875em;
-}
-
-section:first-child{
-    height: 37.5em;
-    width: 100%;
-    background-image: url(../images/about-marquee-mobile.jpg);
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-    margin-bottom: 1.5em;
-}
-
-section:nth-of-type(1) div{
-	position: absolute;
-	left: 0;
-    top: 40%;
-    bottom: 40%;
-	padding: 0em 0.625em 0em 1.25em;
-	z-index: 1;
-}
-
-section:first-child p{
-    color: var(--color-text-on-background);
-    font-size: 0.75em;
-    font-weight: 600;
-    width: 80%;
-}
-
-section:nth-of-type(2) img{
-    padding: 0px 25px 0px 25px;
-}
-
-section:nth-of-type(2) h2{
-    width: 0.01em;
-	height: 0.01em;
-	margin: -0.01em;
-	padding: 0;
-	overflow: hidden;
-}
-
-section:not(:first-child) h2 {
-    font-family: "TT Norms Bold";
-    font-size: 1.25em;
-    line-height: 1.2;
-    color: var(--color-text-on-no-background);
-    margin-bottom: 1.25em;
-}
-
-section:last-child h2{
-    font-family: "TT Norms ExtraBold";
-    margin-bottom: 0;
-}
-
-section:last-child h5{
-	font-family: "TT Norms Bold";
-	margin-bottom: 4.8em;
-	font-size: 0.6875em;
-    color: var(--color-text-on-no-background);
-}
-
+/* stijling alle p op de page  */
 section p{
     color: var(--color-text-on-no-background);
     padding-top: 1em;
 }
 
-
+/* stijling van de links op de page  */
 section a{
     text-transform: uppercase;
     color: var(--color-text-on-no-background);
@@ -132,17 +49,120 @@ section a{
 }
 
 
+/* h1 stijling */
+h1{
+    font-family: "TT Norms Regular";
+    font-size: 0.6875em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-bottom: 0.3125em;
+    font-size: 0.75em;
+    font-weight: normal;
+    color: var(--color-text-on-background);
+}
+
+/* h2 stijling */
+section :first-child h2{
+    font-family: "TT Norms Bold";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.125em;
+    color: var(--color-text-on-background);
+}
+
+/* spreekt alle sections aan behalve de eerste */
+section:not(:first-child) {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 2.875em;
+}
+
+/* spreekt alleen de eerste section aan en geeft het een background img. ook position relative */
+section:first-child{
+    height: 37.5em;
+    width: 100%;
+    background-image: url(../images/about-marquee-mobile.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+/* positioneert items in de eerste section */
+section:nth-of-type(1) div{
+	position: absolute;
+	left: 0;
+    top: 40%;
+    bottom: 40%;
+	padding: 0em 0.625em 0em 1.25em;
+	z-index: 1;
+}
+
+/* stijling p in de eerste section, ook een breedte */
+section:first-child p{
+    color: var(--color-text-on-background);
+    font-size: 0.75em;
+    font-weight: 600;
+    width: 80%;
+}
+
+/* stijling img tweede section */
+section:nth-of-type(2) img{
+    padding: 0px 1.5625em 0px 1.5625em;
+}
+
+/* verstopt de h2 van de tweede section */
+section:nth-of-type(2) h2{
+    width: 0.01em;
+	height: 0.01em;
+	margin: -0.01em;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* stijling alle h2 behalve de eerste */
+section:not(:first-child) h2 {
+    font-family: "TT Norms Bold";
+    font-size: 1.25em;
+    line-height: 1.2;
+    color: var(--color-text-on-no-background);
+    margin-bottom: 1.25em;
+}
 
 
+/* stijling laatste h2  */
+section:last-child h2{
+    font-family: "TT Norms ExtraBold";
+    margin-bottom: 0;
+}
 
-
-
-
-
+/* stijling titel van form */
+section:last-child h3{
+	font-family: "TT Norms Bold";
+	margin-bottom: 4.8em;
+	font-size: 0.6875em;
+    color: var(--color-text-on-no-background);
+}
 
 
 
 /* Form */
+
+/* stijling h4  */
+h4{
+	text-transform: uppercase;
+	font-size: 0.6875em;
+    letter-spacing: .05em;
+	font-weight: normal;
+}
+
+footer h4{
+    text-align: center;
+	margin-top:1.875em ;
+	padding-bottom:0.455em;
+}
+
+
 form{
 	margin-top: 1.25em;
 	padding-bottom: 2.8125em;
@@ -199,6 +219,7 @@ form fieldset div{
 }
 
   
+/* statussen */
 form button:hover, form button:focus, a:hover, a:focus {
 	background-color: var(--color-form-hover);
 	color: var(--color-form-hover-content);

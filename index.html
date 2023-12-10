@@ -12,12 +12,7 @@
 </head>
 
 <body>
-	<!-- svg's -->
-	
-
-
-
-
+	<!-- svg's voor de iconen-->
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 		<symbol id="icon-default" viewBox="0 0 512 512">
 		<path d="m475 256c0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29 40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110z"></path>
@@ -178,11 +173,16 @@
 		</svg>
 
 	<header>
+		<!-- een skiplink, bron: https://www.youtube.com/watch?v=rD3db6-vmuo -->
+		<a href="#maincontent" class="skiplink">skip to main content</a>
+
+		<!-- een lightbar, techniek uit de les, vormgevign knop bron: https://www.youtube.com/watch?v=S-T9XoCMwt4&t=343s -->
 		<div id="lightbar">
 			<p>light mode:</p>
 			<input type="checkbox" id="light-mode" name="light-mode" value="light-mode"/>
 			<label for="light-mode" tabindex="0" aria-label="light mode toggle"></label>
 		</div>
+
 		<!-- sticky navigatie -->
 		<nav>
 			<ul>
@@ -194,11 +194,11 @@
 		</nav>
 	</header>
 
-	<main>
-		
-		
-		
+	<!-- main id voor de skiplink -->
+	<main id="maincontent">
+
 		<section>
+
 			<!-- Een carousel met 4 plaatjes, navigatie voor de plaatjes + tekst en buttons absoluut gepositioneerd -->
 			<h1>welcome to the dreamworks homepage!</h1>
 			<div>
@@ -207,6 +207,7 @@
 				<button>official site</button>
 				<button>watch video</button>
 
+				<!-- navigatie voor de carousel -->
 				<nav>
 					<ul>
 						<li><a href="#1" aria-label="go to first picture in the carousel"></a></li>
@@ -217,8 +218,8 @@
 				</nav>
 			</div>
 			
+			<!-- carousel foto's -->
 			<ul>
-				
 				<li id="1">
 					<a href="#">
 						<img src="images/trolls-3-hero-mobile-1.jpg" alt="A photo of the movie, trolls 3">
@@ -458,7 +459,7 @@
 		</section>
 
 		<section>
-			<!-- Een sectie met klikbare containers en tekst over "about dreamworks, div om de h3 te plaatsen als absoluut.  -->
+			<!-- Een sectie met klikbare containers en tekst over "about dreamworks, div om de containers te maken  -->
 			<h2><a href="about.html">about dreamwork</a></h2>
 
 			<ul>
@@ -514,6 +515,7 @@
 			<p>Register today for the DreamWorks Animation newsletter to receive all the latest information about our upcoming films and projects.</p>
 
 			
+			<!-- form voor invoeren van verjaardag -->
 			<form role="form" action="#">
 				<h5>enter birth date</h5>
 				<fieldset>
@@ -541,8 +543,9 @@
 		
 	</main>
 
+	<!-- een footer met nav en links naar social media -->
 	<footer>
-		<!-- een footer met nav en links naar social media -->
+		<!-- dreamworks logo -->
 		<a href="#" aria-label="dreamworks logo, go to homepage" class="footerlogo"><svg class="icon-dw-logo"><use xlink:href="#icon-dw-logo"></use></svg></a>
 
 		<nav>
@@ -558,6 +561,7 @@
 			</ul>
 		</nav>		
 
+		<!-- social media links + icon -->
 		<aside>
 			<h5>follow dreamworks</h5>
 
@@ -585,8 +589,11 @@
 			  </ul>
 			  
 		</aside>
+
+		<!-- Privacy policy -->
 		<p>© 2023 DreamWorks Animation All Rights Reserved. Privacy Policy | CA Notice | Terms of Service | YouTube Terms of Service | Google Privacy Policy </p>
 
+		<!-- div om de items naast elkaar te zetten onder in de footer -->
 		<div>
             <img src="images/netapp-white.jpg" alt="netapp logo">
 			<img src="images/lenovo-blue.png" alt="lenovo logo">

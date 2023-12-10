@@ -1,4 +1,7 @@
 
+/* algemeen */
+
+/* stijling van alle klikbare h2's op de page */
 section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(5) h2 {
 	font-family: "TT Norms ExtraBold";
 	color: var(--color-text-on-background);
@@ -7,6 +10,16 @@ section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(5) h2 
 	padding: 1.2em 0em 0.8em 0em;
 }
 
+/* geeft de klikbare h2's een underline */
+section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(4) h2{
+	text-decoration: underline var(--color-h2-hover);
+}
+
+
+
+
+
+
 
 
 
@@ -14,6 +27,7 @@ section:nth-of-type(2) h2, section:nth-of-type(3) h2, section:nth-of-type(5) h2 
 
 /* carousel */
 
+/* Een verborgen h1 op de pagina */
 section:nth-of-type(1) h1{
 	width: 0.01em;
 	height: 0.01em;
@@ -22,10 +36,11 @@ section:nth-of-type(1) h1{
 	overflow: hidden;
 }
 
+/* zet de section relative voor positionering */
 section:nth-of-type(1){
 	position: relative;
 }
-
+/* de eerste ul word naast elkaar gezet (imgs)*/
 section:nth-of-type(1) > ul:nth-of-type(1){
     display: flex;
     overflow: hidden; 
@@ -36,6 +51,8 @@ section:nth-of-type(1) > ul:nth-of-type(1){
     list-style: none;
 }
 
+
+/* zorgt dat iomgs ruimte hebben en ook eenachtergrond krijgen */
 section:nth-of-type(1) > ul:nth-of-type(1) li{
 	width: 100%;
     flex-shrink: 0;
@@ -43,30 +60,33 @@ section:nth-of-type(1) > ul:nth-of-type(1) li{
 
 }
 
+/* de achtergrond */
 section:nth-of-type(1) > ul:nth-of-type(1) img{
 	display: block;
     width: 100%;
 	mix-blend-mode: overlay;	
 } 
 
-
+/* de navigatie van de carousel */
 section:nth-of-type(1) nav ul{
 	display: flex;
 }
 
 section:nth-of-type(1) nav ul li{
 	width: 100%;
-	
 }
 
+
+/* om de navigaties er als een streepje eruit te laten zien */
 section:nth-of-type(1) nav ul li a::before {
     content: " ";
 	background-color: var(--color-carousel-nav);
-    display: inline-block;  /* van de dreamworks website */
+    display: inline-block;  
     width: 100%; 
     height: 0.25em; 
 }
 
+/* om alles in de section te positioneren over de imgs */
 section:nth-of-type(1) div{
 	position: absolute;
 	left: 0;
@@ -96,6 +116,8 @@ body main section:nth-of-type(1) h2{
 	
 }
 
+
+/* stijling van de buttons */
 section:nth-of-type(1) div button{
 	margin: 1em 1em 0.5em 0em;
     background: transparent;
@@ -111,6 +133,8 @@ section:nth-of-type(1) div button{
 	color: var(--color-text-on-background);
 }
 
+
+/* statussen */
 section:nth-of-type(1) div button:hover, section:nth-of-type(1) div button:focus{
 	background-color: var(--color-carousel-button-hover);
 	color: var(--color-carousel-button-hover-content)
@@ -136,7 +160,10 @@ section:nth-of-type(1) nav ul li a:active:before{
 
 
 
-/* movies + television */
+
+
+
+/* movies + television  section*/
 
 h3{
 	font-size: 0.9375em;
@@ -153,8 +180,7 @@ h4{
 	margin-top: 0.3125em;
 }
 
-
-
+/* om de imgs naast elkaar te zetten */
 main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
 	background-color:var(--color-img-blend-backgroud);
 	display: flex;
@@ -165,7 +191,7 @@ main section:nth-of-type(2) ul, main section:nth-of-type(3) ul{
 }
 
 
-
+/* imgs de juiste grootte */
 main section:nth-of-type(2) img, main section:nth-of-type(3) img{
 	display: block;
     width: 100%;
@@ -173,12 +199,14 @@ main section:nth-of-type(2) img, main section:nth-of-type(3) img{
 	
 }
 
+/* imgs de juiste breedte op het scherm */
 main section:nth-of-type(2) li, main section:nth-of-type(3) li {
 	position: relative;	
 	width: 70%;
 	flex-shrink: 0;
-  }
+}
   
+/* om de items over de img te positioneren */
 main section:nth-of-type(2) div, main section:nth-of-type(3) div {
 	position: absolute;
 	bottom: 0;
@@ -193,10 +221,13 @@ main section:nth-of-type(2) div, section:nth-of-type(3) div{
 	right: 0;
 	padding-bottom: 1.25em;
 }
+
+
 main section:nth-of-type(2) h3, main section:nth-of-type(2) h4, main section:nth-of-type(3) h3, main section:nth-of-type(3) h4{
 	width: 90%;
 }
 
+/* statussen */
 h2 a:hover, h2 a:focus{
 	color: var(--color-h2-hover-content);
 	background-color: var(--color-background-focus-hover-state);
@@ -218,8 +249,15 @@ img:active :not(main section:nth-of-type(5) img){
 }
 
 
+
+
+
+
+
+
 /* about dreamworks */
 
+/* kleur en margin van de about section */
 main section:nth-of-type(4) {
 	background-color: var(--color-background-about);
 	margin-top: 3.54545em;
@@ -236,7 +274,7 @@ main section:nth-of-type(4) h2{
 	font-family: "TT Norms ExtraBold";
 }
 
-
+/* om de containers naast elkaar te zetten */
 main section:nth-of-type(4) ul{
 	display: flex;
 	overflow-x: auto;
@@ -246,7 +284,7 @@ main section:nth-of-type(4) ul{
 }
 
 
-
+/* de containers met id om deze per container te stijlen. ook word de grootte hier aangegeven */
 #campus, #iconic_feature_films, #award-winning_television, #innovative_technology{
 	width: 18.75em;
 	height: 16.875em;
@@ -256,6 +294,7 @@ main section:nth-of-type(4) ul{
 }
 
 
+/* om een gradient over de container en background img te zetten */
 main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #award-winning_television::before, #innovative_technology::before { 
 	content: "";
 	position: absolute;
@@ -266,6 +305,7 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 	background-image: linear-gradient(var(--about-img-background), var(--about-img-background));
   }
 
+  /* om de h3 in het midden te zettten van de container */
   main section:nth-of-type(4) #campus h3, #iconic_feature_films h3, #award-winning_television h3, #innovative_technology h3{
 	position: absolute;
 	top: 50%;
@@ -277,6 +317,7 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 	text-align: center;
 }
 
+/* background imgs per container */
 #campus{
 	background-image:url(../images/about-creative-haven.jpg);
 }
@@ -293,6 +334,7 @@ main section:nth-of-type(4) #campus::before, #iconic_feature_films::before, #awa
 	background-image: url(../images/about-tech.jpg);
 }
 
+/* de tekst onder de containers */
 section:nth-of-type(4) p{
 	color: var(--color-text-on-background);
 	text-align: center;
@@ -304,6 +346,7 @@ section:nth-of-type(4) p{
 	margin-right: 0.625em;
 }
 
+/* statussen */
 main section:nth-of-type(4) h2 a:hover, main section:nth-of-type(4) h2 a:focus{
 	color: var(--color-h2-hover-content);
 } 
@@ -330,8 +373,12 @@ main section:nth-of-type(4) #campus:active, #iconic_feature_films:active, #award
 
 
 
+
+
+
 /* Stay in touch */
 
+/* maat van de section */
 body main section:nth-of-type(5){
 	padding-left: 1.625em;
 	padding-right: 1.625em;
@@ -339,6 +386,8 @@ body main section:nth-of-type(5){
 	padding-bottom: 2.5em;
 }
 
+
+/* h2,h5, p plaatsing */
 body main section:nth-of-type(5) h2, body main section:nth-of-type(5) p, body main section:nth-of-type(5) h5 {
 	text-align: initial;
 	color: var(--color-form-accent);
@@ -347,6 +396,8 @@ body main section:nth-of-type(5) h2, body main section:nth-of-type(5) p, body ma
 	font-size:1.25em; 
 }
 
+
+/* stijlen voor overige elementen */
 body main section:nth-of-type(5) p{
 	font-size:0.9375em ;
 	line-height: 1.4;
@@ -360,7 +411,7 @@ body main section:nth-of-type(5) h5{
 	font-size: 0.6875em;
 }
 
-
+/* img op een goede maat zetten */
 main section:nth-of-type(5) img{
 	width: 100%;
 	height: 100%;
@@ -377,6 +428,7 @@ form{
 	padding-bottom: 2.8125em;
 }
 
+/* zet het form horizontaal */
 form fieldset {
 	display: flex;
 	border: 0;
@@ -384,6 +436,8 @@ form fieldset {
 	gap:.6em;
 }
   
+
+/* stijling van de naam van de inputs */
 form fieldset label {
 	margin-bottom: 1em;
 	color: var(--color-form-accent);
@@ -394,6 +448,8 @@ form fieldset label {
 	font-family:"TT Norms Bold";
 }
   
+
+/* input stijling */
 form fieldset input {
 	width: 6.5em;
 	color: var(--color-form-accent);
@@ -403,16 +459,15 @@ form fieldset input {
 	background-color: var(--color-form-input-background);
 }
 
-form fieldset input:hover, form fieldset input:focus {
-	outline: 0.0625em solid var(--color-form-hover); 
-}
-  
+
+  /* extra stijling zodat de naam boven de streepjes staat */
 form fieldset div{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
+/* stijling voor de button onder het form */
 form button{
 	margin-top: 1.7em;
     background: transparent;
@@ -426,6 +481,11 @@ form button{
     border: 0.0625em solid var(--color-form-accent);
 	color: var(--color-form-accent);
 }
+
+/* statussen */
+form fieldset input:hover, form fieldset input:focus {
+	outline: 0.0625em solid var(--color-form-hover); 
+}
   
 form button:hover, form button:focus{
 	background-color: var(--color-form-hover);
@@ -437,7 +497,9 @@ form button:active{
 	color: var(--color-form-accent);
 }
 
+
 /* footer */
+/* speciale tag voor de h5, want de andere pagina heeft geen h5 en deze wel */
 h5{
 	text-transform: uppercase;
 	font-size: 0.6875em;
