@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.dreamworks.com/
   #### Screenshot(s) van de eerste pagina (small screen): 
   home-page 
-  <img src="readme-images/dreamworks-home-img.png" width="375px" alt="een foto van dreamworks home page">
+  <img src="./readme-images/dreamworks-home-img.png" width="375px" alt="een foto van dreamworks home page">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  diversity, equity, & inclusion page
-  <img src="readme-images//dreamworks-about.png" width="375px" alt="een foto van dreamworks diversity, equity, & inclusion page">
+  tweede about page
+  <img src="./readme-images/page2.png" width="375px" alt="een foto van dreamworks diversity, equity, & inclusion page">
  
 </details>
 
